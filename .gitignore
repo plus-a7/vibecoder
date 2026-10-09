@@ -1,0 +1,13 @@
+node_modules/
+dist/
+.env
+.env.*
+*.log
+*.sqlite
+*.sqlite3
+*.db
+.DS_Store
+evidence/
+archive/
+deploy/
+private/

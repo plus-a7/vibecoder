@@ -1,0 +1,13 @@
+{
+  "name": "the-perfect-vibe-coder",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "The perfect vibe coder. — offline English conversation game",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "test": "node --test test/*.test.mjs",
+    "start": "node scripts/serve.mjs"
+  },
+  "engines": { "node": ">=22" }
+}

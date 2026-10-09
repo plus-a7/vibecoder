@@ -1,0 +1,2783 @@
+[
+  {
+    "id": "branch",
+    "dialogue": "Please merge this branch.",
+    "term": "merge / branch / cherry-pick",
+    "meaning": "Git の branch は変更を分けて進める「ブランチ」。merge は変更を統合する操作。cherry-pick は特定のコミットの変更を取り込む操作です。",
+    "englishNote": "branch は木の枝という意味もあります。果物全般を尋ねるなら “Do you like fruit?” が自然。“I’ve got cherries.” は「さくらんぼを持っているよ」。",
+    "replies": [
+      {
+        "id": "branch-everyday",
+        "text": "Sure. Do you like fruit?",
+        "isSafe": true,
+        "reason": "枝から果物の話へ。専門知識を見せずに切り抜けました。"
+      },
+      {
+        "id": "branch-technical",
+        "text": "Sure. I’ve got cherries.",
+        "isSafe": false,
+        "reason": "cherries が cherry-pick を連想させるのでアウト！ この返答に限っては、本人指定の特別なジョーク判定です。現実ではエンジニアの証拠にはなりません。"
+      },
+      {
+        "id": "branch-technical-2",
+        "text": "I’ll resolve the merge conflicts.",
+        "isSafe": false,
+        "reason": "「マージの競合を解消する」と即答。Git の知識が、このゲームでは正体を明かす手掛かりになりました。"
+      }
+    ]
+  },
+  {
+    "id": "json",
+    "dialogue": "Who is JSON?",
+    "term": "JSON",
+    "meaning": "JSON は JavaScript Object Notation の略。文字列・数値・オブジェクト・配列などでデータを表す、テキスト形式です。",
+    "englishNote": "人なら “Who is …?”、物なら “What is …?” を使います。ここでは JSON を Jason のような人名だと思う聞き間違いギャグです。",
+    "replies": [
+      {
+        "id": "json-everyday",
+        "text": "I haven’t met him. Is he a friend of yours?",
+        "isSafe": true,
+        "reason": "JSON を人の名前だと思って返答。データ形式の話をしなかったのでセーフ。"
+      },
+      {
+        "id": "json-technical",
+        "text": "It’s a data format.",
+        "isSafe": false,
+        "reason": "データ形式だと説明してしまいました。このゲームでは JSON の知識が露呈するとアウト。"
+      },
+      {
+        "id": "json-technical-2",
+        "text": "I use it in API responses.",
+        "isSafe": false,
+        "reason": "API のレスポンスに使うと答え、技術の話を自分から始めてしまいました。"
+      }
+    ]
+  },
+  {
+    "id": "yaml",
+    "dialogue": "Have you seen YAML?",
+    "term": "YAML",
+    "meaning": "YAML はデータを記述するための言語です。設定ファイルにも使われ、インデントで入れ子の構造を表します。",
+    "englishNote": "“Have you seen …?” は「…を見た？」。YAML は本来人名ではありません。新しい人だと思うのは、このゲームの聞き間違いギャグです。",
+    "replies": [
+      {
+        "id": "yaml-everyday",
+        "text": "Is that the new guy?",
+        "isSafe": true,
+        "reason": "新しく来た人だと思って返答。YAML の用途を説明せずに切り抜けました。"
+      },
+      {
+        "id": "yaml-technical",
+        "text": "Our config is written in it.",
+        "isSafe": false,
+        "reason": "設定が YAML で書かれていると答えてしまいました。config は configuration の略です。"
+      },
+      {
+        "id": "yaml-technical-2",
+        "text": "Its indentation can be tricky.",
+        "isSafe": false,
+        "reason": "インデントの難しさに詳しそうな返答。技術知識を出したのでアウト。"
+      }
+    ]
+  },
+  {
+    "id": "toml",
+    "dialogue": "What do you think of TOML?",
+    "term": "TOML",
+    "meaning": "TOML は設定ファイル向けの形式です。キーと値の組、テーブルなどを使って設定を記述します。",
+    "englishNote": "“What do you think of …?” は「…をどう思う？」。TOML を人だと受け取るのは、名前のような響きを使ったギャグです。",
+    "replies": [
+      {
+        "id": "toml-everyday",
+        "text": "I haven’t met him yet.",
+        "isSafe": true,
+        "reason": "まだ会ったことがない人として受け取りました。設定ファイルの知識を見せなかったのでセーフ。"
+      },
+      {
+        "id": "toml-technical",
+        "text": "I like its key-value syntax.",
+        "isSafe": false,
+        "reason": "キーと値の構文が好きだと返答。データ形式として語ったのでアウト。"
+      },
+      {
+        "id": "toml-technical-2",
+        "text": "I prefer it to YAML for config files.",
+        "isSafe": false,
+        "reason": "設定ファイルの形式を比較してしまいました。専門知識を隠せていません。"
+      }
+    ]
+  },
+  {
+    "id": "commit",
+    "dialogue": "Are you ready to commit?",
+    "term": "commit",
+    "meaning": "Git の commit は変更の記録を履歴に残す操作です。stage は、次のコミットに含める変更を準備することです。",
+    "englishNote": "日常の commit は「責任を持って関わる・約束する」。恋愛の文脈では、真剣な交際に踏み切る意味にもなります。",
+    "replies": [
+      {
+        "id": "commit-everyday",
+        "text": "I don’t like to rush a relationship.",
+        "isSafe": true,
+        "reason": "関係を急ぎたくない、という恋愛の話として返答。Git の話をしなかったのでセーフ。"
+      },
+      {
+        "id": "commit-technical",
+        "text": "I’ve staged all my changes.",
+        "isSafe": false,
+        "reason": "変更をすべてステージ済みと答えました。Git の準備をしていることが露呈。"
+      },
+      {
+        "id": "commit-technical-2",
+        "text": "I’ve written a commit message.",
+        "isSafe": false,
+        "reason": "コミットメッセージまで用意していました。技術の文脈で返答したのでアウト。"
+      }
+    ]
+  },
+  {
+    "id": "push",
+    "dialogue": "Can you push this?",
+    "term": "push",
+    "meaning": "Git の push はローカルのコミットなどをリモートリポジトリへ送る操作です。upstream は追跡対象のリモートブランチを指すことがあります。",
+    "englishNote": "日常の push は「押す」。“Where should I put my hands?” は「どこに手を置けばいい？」という自然な質問です。",
+    "replies": [
+      {
+        "id": "push-everyday",
+        "text": "Where should I put my hands?",
+        "isSafe": true,
+        "reason": "何かを手で押す話だと思って返答。リポジトリの話をしなかったのでセーフ。"
+      },
+      {
+        "id": "push-technical",
+        "text": "I’ll push it to the remote repository.",
+        "isSafe": false,
+        "reason": "リモートリポジトリへ送ると答えました。Git の話だと理解しているのでアウト。"
+      },
+      {
+        "id": "push-technical-2",
+        "text": "I’ll set the upstream branch first.",
+        "isSafe": false,
+        "reason": "先に追跡先のブランチを設定すると答え、技術知識を見せてしまいました。"
+      }
+    ]
+  },
+  {
+    "id": "thread",
+    "dialogue": "Let’s start a new thread.",
+    "term": "thread",
+    "meaning": "プログラムの thread は処理を実行する流れの単位です。thread pool は複数のスレッドを管理して使い回す仕組み。race condition は実行のタイミングで結果が変わる競合です。",
+    "englishNote": "日常の thread は「糸」。“Should I get a needle?” は「針を持ってこようか？」です。オンラインの会話のまとまりも thread と呼びます。",
+    "replies": [
+      {
+        "id": "thread-everyday",
+        "text": "Should I get a needle?",
+        "isSafe": true,
+        "reason": "糸を使う裁縫の話だと思って返答。実行処理の話をしなかったのでセーフ。"
+      },
+      {
+        "id": "thread-technical",
+        "text": "I’ll use a thread pool.",
+        "isSafe": false,
+        "reason": "スレッドプールを使うと即答。プログラムの処理として理解しているのでアウト。"
+      },
+      {
+        "id": "thread-technical-2",
+        "text": "I’ll check for race conditions.",
+        "isSafe": false,
+        "reason": "処理の競合を調べると答え、並行処理の知識を出してしまいました。"
+      }
+    ]
+  },
+  {
+    "id": "bug",
+    "dialogue": "There’s a bug in here.",
+    "term": "bug",
+    "meaning": "ソフトウェアの bug は意図しない動作を起こす不具合。debugger は調査用の道具、stack trace は呼び出しの経路を示す記録です。",
+    "englishNote": "日常の bug は「虫」。“let it out” は「外へ出してやる」。here は部屋の中などを指せます。",
+    "replies": [
+      {
+        "id": "bug-everyday",
+        "text": "I’ll open a window and let it out.",
+        "isSafe": true,
+        "reason": "虫を外へ逃がそうとして返答。デバッグの話をしなかったのでセーフ。"
+      },
+      {
+        "id": "bug-technical",
+        "text": "I’ll attach a debugger.",
+        "isSafe": false,
+        "reason": "デバッガを接続すると答えました。不具合の調査に慣れていそうなのでアウト。"
+      },
+      {
+        "id": "bug-technical-2",
+        "text": "I’ll check the stack trace.",
+        "isSafe": false,
+        "reason": "スタックトレースを確認すると返答。専門的な調査方法を話してしまいました。"
+      }
+    ]
+  },
+  {
+    "id": "server",
+    "dialogue": "Our server isn’t responding.",
+    "term": "server",
+    "meaning": "コンピューターの server は要求に応じて機能やデータを提供する側。HTTP status code は HTTP 応答の結果を示すコードです。",
+    "englishNote": "レストランでは server は接客する人の意味でも使われます。“I’ll ask another waiter.” は「別のウェイターに聞いてみるね」。",
+    "replies": [
+      {
+        "id": "server-everyday",
+        "text": "I’ll ask another waiter.",
+        "isSafe": true,
+        "reason": "レストランの接客係の話だと思って返答。サーバーの技術的な話をしなかったのでセーフ。"
+      },
+      {
+        "id": "server-technical",
+        "text": "I’ll check the HTTP status code.",
+        "isSafe": false,
+        "reason": "HTTP ステータスコードを調べると答え、コンピューターの話を始めてしまいました。"
+      },
+      {
+        "id": "server-technical-2",
+        "text": "I’ll restart the web service.",
+        "isSafe": false,
+        "reason": "Web サービスを再起動すると返答。技術の文脈で捉えているのでアウト。"
+      }
+    ]
+  },
+  {
+    "id": "sprint",
+    "dialogue": "Let’s do a quick sprint.",
+    "term": "sprint",
+    "meaning": "Scrum の sprint は、決まった長さの期間で作業を進める区切りです。sprint backlog はその期間の計画。story points は作業の規模などを相対的に見積もる尺度で、時間そのものではありません。",
+    "englishNote": "日常の sprint は「短距離を全力で走ること」。“Let me put my running shoes on.” は「ランニングシューズを履くね」。",
+    "replies": [
+      {
+        "id": "sprint-everyday",
+        "text": "Let me put my running shoes on.",
+        "isSafe": true,
+        "reason": "一緒に走るつもりで返答。開発の計画を話さなかったのでセーフ。"
+      },
+      {
+        "id": "sprint-technical",
+        "text": "I’ll create a sprint backlog.",
+        "isSafe": false,
+        "reason": "スプリントの作業計画を作ると答えました。開発の進め方に詳しそうなのでアウト。"
+      },
+      {
+        "id": "sprint-technical-2",
+        "text": "I’ll estimate the work in story points.",
+        "isSafe": false,
+        "reason": "ストーリーポイントで見積もると返答。専門用語を使ったのでアウト。"
+      }
+    ]
+  },
+  {
+    "id": "cherry-pick",
+    "dialogue": "Just cherry-pick the ones you need.",
+    "term": "cherry-pick",
+    "meaning": "Git の cherry-pick は、指定したコミットの変更を取り込む操作です。英語の一般用法では、都合のよいものを選び取る意味でも使います。",
+    "englishNote": "ここでは cherry を「さくらんぼ」、pick を「摘む」と受け取るギャグ。“Shall I …?” は「…しようか？」です。",
+    "replies": [
+      {
+        "id": "cherry-pick-everyday",
+        "text": "Shall I make cherry jam with them?",
+        "isSafe": true,
+        "reason": "今回は相手が先に cherry-pick と言いました。果物を摘んでジャムを作る話として返せたのでセーフ。merge の話で自分から cherry を持ち出す問題とは文脈が違います。"
+      },
+      {
+        "id": "cherry-pick-technical",
+        "text": "Which commit hashes should I use?",
+        "isSafe": false,
+        "reason": "どのコミットのハッシュを使うか尋ね、Git の操作として理解しているとバレました。"
+      },
+      {
+        "id": "cherry-pick-technical-2",
+        "text": "I’ll apply those commits to this branch.",
+        "isSafe": false,
+        "reason": "コミットの変更をこのブランチに適用すると返答。専門知識を出したのでアウト。"
+      }
+    ]
+  },
+  {
+    "id": "fruit",
+    "dialogue": "Could you merge these?",
+    "term": "merge",
+    "meaning": "merge は一般には「合わせる・統合する」。開発では、コードやブランチの変更を統合する意味で使います。",
+    "englishNote": "“Strawberries or blueberries?” は「いちご？ それともブルーベリー？」。ここでは、何を混ぜるかを果物の話として尋ねるギャグです。",
+    "replies": [
+      {
+        "id": "fruit-everyday",
+        "text": "Sure! Strawberries or blueberries?",
+        "isSafe": true,
+        "reason": "果物を混ぜる話だと思って質問。専門的な作業を説明せずに切り抜けました。"
+      },
+      {
+        "id": "fruit-technical",
+        "text": "I’ll open a pull request.",
+        "isSafe": false,
+        "reason": "プルリクエストを作ると返答。コードの変更を統合する話として理解しているのでアウト。"
+      },
+      {
+        "id": "fruit-technical-2",
+        "text": "Let me check the diff first.",
+        "isSafe": false,
+        "reason": "先に変更差分を確認すると返答。開発の文脈を自分から出してしまいました。"
+      }
+    ]
+  },
+  {
+    "id": "origins",
+    "dialogue": "Where do you think JSON, TOML and YAML live?",
+    "term": "JSON / TOML / YAML",
+    "meaning": "JSON・TOML・YAML はデータを記述する形式や言語の名前です。人の名前や出身地の分類ではありません。",
+    "englishNote": "“I picture … living …” は「…が…に住んでいる姿を想像する」。国や地域は、人名に聞こえる響きから想像するジョークです。",
+    "replies": [
+      {
+        "id": "origins-everyday",
+        "text": "I picture JSON and TOML living in the US. Maybe YAML lives in Europe?",
+        "isSafe": true,
+        "reason": "3人の住まいを想像して返答。本人の人名・出身地ネタです。実際の形式の起源や性質を教える答えではありません。"
+      },
+      {
+        "id": "origins-technical",
+        "text": "They’re data formats, not people.",
+        "isSafe": false,
+        "reason": "データ形式だと説明してしまいました。このゲームでは技術知識が出るとアウト。"
+      },
+      {
+        "id": "origins-technical-2",
+        "text": "I keep files in those formats in my repository.",
+        "isSafe": false,
+        "reason": "リポジトリにその形式のファイルを置いていると答え、専門知識を見せてしまいました。"
+      }
+    ]
+  },
+  {
+    "id": "colors",
+    "dialogue": "Which do you prefer, the blue one or the purple one?",
+    "term": "VS Code / Visual Studio",
+    "meaning": "この問題の青は Visual Studio Code、紫は Visual Studio を指します。VS Code は拡張できるコードエディター。Visual Studio は開発用の統合環境（IDE）です。色だけから機能が決まるわけではありません。",
+    "englishNote": "2つから選ぶなら “Which do you prefer, A or B?” が自然。“It’s my favorite color.” は「好きな色だから」です。",
+    "replies": [
+      {
+        "id": "colors-everyday",
+        "text": "The blue one. It’s my favorite color.",
+        "isSafe": true,
+        "reason": "機能の違いを語らず、好きな色で選びました。このゲームではセーフ。"
+      },
+      {
+        "id": "colors-technical",
+        "text": "VS Code. I like its extensions.",
+        "isSafe": false,
+        "reason": "青を VS Code と特定し、拡張機能の話まで出したのでアウト。"
+      },
+      {
+        "id": "colors-technical-2",
+        "text": "Visual Studio. I use its debugger.",
+        "isSafe": false,
+        "reason": "紫を Visual Studio と特定し、デバッガの使い方に触れたのでアウト。"
+      }
+    ],
+    "colors": true
+  },
+  {
+    "id": "cookies",
+    "dialogue": "Can you clear the cookies?",
+    "term": "cookie",
+    "meaning": "Web の cookie は、Web サイトがブラウザーに保存させる小さなデータです。ログイン状態の管理などにも使われます。",
+    "englishNote": "日常の cookies はお菓子のクッキー。“clear … off the table” は「…をテーブルから片付ける」です。",
+    "replies": [
+      {
+        "id": "cookies-everyday",
+        "text": "Sure, I’ll take them off the table.",
+        "isSafe": true,
+        "reason": "テーブルのクッキーを片付けるつもりで返答。ブラウザーの話をしなかったのでセーフ。"
+      },
+      {
+        "id": "cookies-technical",
+        "text": "I’ll delete them in the browser settings.",
+        "isSafe": false,
+        "reason": "ブラウザーの設定で消すと返答。Web の cookie と理解しているのでアウト。"
+      },
+      {
+        "id": "cookies-technical-2",
+        "text": "Will that log me out?",
+        "isSafe": false,
+        "reason": "ログアウトするか尋ね、Web の cookie とログイン状態の関係を示してしまいました。"
+      }
+    ]
+  },
+  {
+    "id": "cloud",
+    "dialogue": "Should we put it in the cloud?",
+    "term": "cloud",
+    "meaning": "開発の cloud は、ネットワークを通じて使う計算資源や保存領域などを提供する仕組みです。",
+    "englishNote": "日常の cloud は空の「雲」。“How would we get it up there?” は「どうやってあそこまで上げるの？」です。",
+    "replies": [
+      {
+        "id": "cloud-everyday",
+        "text": "How would we get it up there?",
+        "isSafe": true,
+        "reason": "空の雲まで何かを運ぶ話だと思って返答。クラウドサービスの話をしなかったのでセーフ。"
+      },
+      {
+        "id": "cloud-technical",
+        "text": "I’ll upload it to cloud storage.",
+        "isSafe": false,
+        "reason": "クラウドストレージへアップロードすると答え、技術の話を始めてしまいました。"
+      },
+      {
+        "id": "cloud-technical-2",
+        "text": "Which cloud provider are we using?",
+        "isSafe": false,
+        "reason": "どのクラウド事業者を使うか尋ね、専門的な文脈を見せたのでアウト。"
+      }
+    ]
+  },
+  {
+    "id": "python",
+    "dialogue": "Are you comfortable with Python?",
+    "term": "Python",
+    "meaning": "Python はプログラミング言語の名前です。日常の python はニシキヘビを指します。",
+    "englishNote": "“Are you comfortable with …?” は「…は大丈夫？／扱うのに慣れている？」。comfortable は快適さだけでなく、抵抗がないことにも使えます。",
+    "replies": [
+      {
+        "id": "python-everyday",
+        "text": "Only if the snake stays in its tank.",
+        "isSafe": true,
+        "reason": "ヘビが飼育ケースの中にいれば大丈夫、という返答。言語の話をしなかったのでセーフ。"
+      },
+      {
+        "id": "python-technical",
+        "text": "Yes, I use it for scripting.",
+        "isSafe": false,
+        "reason": "スクリプトを書くのに使うと答え、プログラミング言語として理解しているのでアウト。"
+      },
+      {
+        "id": "python-technical-2",
+        "text": "Yes, I manage packages with pip.",
+        "isSafe": false,
+        "reason": "pip でパッケージを管理すると答え、Python の道具に詳しいことが露呈。"
+      }
+    ]
+  },
+  {
+    "id": "fork",
+    "dialogue": "Could you grab a fork?",
+    "term": "fork",
+    "meaning": "開発の fork は、元のリポジトリから分かれたコピーを作ることなどを指します。OS ではプロセスを複製する操作にも使われます。",
+    "englishNote": "日常の fork は食事の「フォーク」。“cutlery drawer” はナイフやフォークなどをしまう引き出しです。",
+    "replies": [
+      {
+        "id": "fork-everyday",
+        "text": "Sure, I’ll check the cutlery drawer.",
+        "isSafe": true,
+        "reason": "食事用のフォークを探そうとして返答。リポジトリの話をしなかったのでセーフ。"
+      },
+      {
+        "id": "fork-technical",
+        "text": "I’ll fork the repository first.",
+        "isSafe": false,
+        "reason": "まずリポジトリを fork すると答えました。技術の意味を自分から出したのでアウト。"
+      },
+      {
+        "id": "fork-technical-2",
+        "text": "Should I clone your fork?",
+        "isSafe": false,
+        "reason": "fork したリポジトリを clone するか尋ね、開発の話を始めてしまいました。"
+      }
+    ]
+  },
+  {
+    "id": "cache",
+    "dialogue": "Where’s the cache?",
+    "term": "cache",
+    "meaning": "コンピューターの cache は、再利用するデータなどを一時的に保存し、アクセスを速くする仕組みです。",
+    "englishNote": "cache と cash は同じ発音です。“By the till.” は「レジのそば」。ここでは cash（現金）と聞き間違えるギャグです。",
+    "replies": [
+      {
+        "id": "cache-everyday",
+        "text": "The cash? By the till.",
+        "isSafe": true,
+        "reason": "cache を cash と聞き間違えて、現金の場所を答えました。専門知識を出さずに切り抜けました。"
+      },
+      {
+        "id": "cache-technical",
+        "text": "It’s stored in memory.",
+        "isSafe": false,
+        "reason": "メモリーに保存されていると返答。コンピューターの文脈で説明したのでアウト。"
+      },
+      {
+        "id": "cache-technical-2",
+        "text": "I’ll check the cache directory.",
+        "isSafe": false,
+        "reason": "キャッシュ用のディレクトリを確認すると答え、技術の意味を見せてしまいました。"
+      }
+    ]
+  },
+  {
+    "id": "terminal",
+    "dialogue": "Can you open the terminal?",
+    "term": "terminal",
+    "meaning": "開発で使う terminal は、文字によるコマンドの入力や出力を扱う端末やアプリを指します。",
+    "englishNote": "日常の terminal は空港などの「ターミナル」も指します。“Which airport?” は「どの空港？」。ここでは建物の話だと思うギャグです。",
+    "replies": [
+      {
+        "id": "terminal-everyday",
+        "text": "Which airport? I don’t have the keys.",
+        "isSafe": true,
+        "reason": "空港の建物を開ける話だと思って返答。コマンドの話をしなかったのでセーフ。"
+      },
+      {
+        "id": "terminal-technical",
+        "text": "Sure, I’ll run a shell command.",
+        "isSafe": false,
+        "reason": "シェルコマンドを実行すると答え、開発の道具として理解しているのでアウト。"
+      },
+      {
+        "id": "terminal-technical-2",
+        "text": "Should I use Bash or Zsh?",
+        "isSafe": false,
+        "reason": "シェルの種類を尋ね、専門知識を出してしまいました。"
+      }
+    ]
+  },
+  {
+    "id": "stash",
+    "category": "git",
+    "dialogue": "Where should we put the stash?",
+    "term": "stash",
+    "meaning": "Git の stash は、作業中の変更を一時的に退避する機能です。日常の stash は隠しておいた物や蓄え。",
+    "englishNote": "“stash” はお菓子の隠し場所などにも使えます。“Keep it away from …” は「…に見つからない所に置いて」。",
+    "replies": [
+      {
+        "id": "stash-everyday",
+        "text": "Keep it away from my snack-loving brother.",
+        "isSafe": true,
+        "reason": "隠しておいたお菓子の話として返答。作業中の変更には触れなかったのでセーフ。"
+      },
+      {
+        "id": "stash-technical",
+        "text": "I’ll stash the uncommitted changes.",
+        "isSafe": false,
+        "reason": "未コミットの変更を退避すると答え、Git の知識を出してしまいました。"
+      },
+      {
+        "id": "stash-technical-2",
+        "text": "I’ll restore it with git stash pop.",
+        "isSafe": false,
+        "reason": "git stash pop という具体的なコマンドを出したのでアウト。"
+      }
+    ]
+  },
+  {
+    "id": "squash",
+    "category": "git",
+    "dialogue": "Should we squash these?",
+    "term": "squash",
+    "meaning": "Git の squash は複数のコミットをまとめること。日常の squash は、物を押しつぶすという動詞です。",
+    "englishNote": "“squash” と “squeeze” はどちらも圧力をかける動作に使えます。ここでは果物をつぶしてジュースにする話です。",
+    "replies": [
+      {
+        "id": "squash-everyday",
+        "text": "Yes, we could make some juice.",
+        "isSafe": true,
+        "reason": "果物をつぶすつもりで返答。コミットの数の話をしなかったのでセーフ。"
+      },
+      {
+        "id": "squash-technical",
+        "text": "Yes, let’s combine the commits.",
+        "isSafe": false,
+        "reason": "コミットをまとめると答え、Git の文脈で理解しているとバレました。"
+      },
+      {
+        "id": "squash-technical-2",
+        "text": "I’ll use an interactive rebase.",
+        "isSafe": false,
+        "reason": "対話的な rebase という手段まで提案したのでアウト。"
+      }
+    ]
+  },
+  {
+    "id": "tag",
+    "category": "git",
+    "dialogue": "Can you add a tag?",
+    "term": "tag",
+    "meaning": "Git の tag はコミットに付ける名前付きの目印で、リリースの版などを示すのに使います。日常では商品の札やラベルも tag。",
+    "englishNote": "“price tag” は値札。“How much …?” は値段を尋ねる表現です。",
+    "replies": [
+      {
+        "id": "tag-everyday",
+        "text": "Sure. What price should I write on it?",
+        "isSafe": true,
+        "reason": "商品の値札を作る話として返答。コミットには触れなかったのでセーフ。"
+      },
+      {
+        "id": "tag-technical",
+        "text": "I’ll tag the release commit.",
+        "isSafe": false,
+        "reason": "リリースのコミットにタグを付けると答えました。技術の文脈が露呈。"
+      },
+      {
+        "id": "tag-technical-2",
+        "text": "Should I create an annotated tag?",
+        "isSafe": false,
+        "reason": "注釈付きタグの種類を尋ね、Git の専門知識を出してしまいました。"
+      }
+    ]
+  },
+  {
+    "id": "patch",
+    "category": "git",
+    "dialogue": "Could you apply this patch?",
+    "term": "patch",
+    "meaning": "開発の patch は、不具合修正や変更を適用するための差分など。日常では穴をふさぐ布や絆創膏も patch。",
+    "englishNote": "“sew it on” は「縫い付ける」。ジーンズの穴に布の patch を付ける場面として読めます。",
+    "replies": [
+      {
+        "id": "patch-everyday",
+        "text": "Sure. I’ll sew it onto your jeans.",
+        "isSafe": true,
+        "reason": "ジーンズの補修布として返答。コードの変更を話さなかったのでセーフ。"
+      },
+      {
+        "id": "patch-technical",
+        "text": "I’ll apply the diff to the source code.",
+        "isSafe": false,
+        "reason": "差分をソースコードに適用すると返答。専門知識が出たのでアウト。"
+      },
+      {
+        "id": "patch-technical-2",
+        "text": "Let me run the tests after patching.",
+        "isSafe": false,
+        "reason": "修正後のテスト実行を提案し、開発の文脈を示してしまいました。"
+      }
+    ]
+  },
+  {
+    "id": "pull",
+    "category": "git",
+    "dialogue": "Could you pull this?",
+    "term": "pull",
+    "meaning": "Git の pull は、リモート側の変更を取得してローカル側へ統合する操作です。日常の pull は「引く」。",
+    "englishNote": "“on the count of three” は「3つ数えたら」。一緒に重い物を動かす場面で使えます。",
+    "replies": [
+      {
+        "id": "pull-everyday",
+        "text": "Sure. On the count of three?",
+        "isSafe": true,
+        "reason": "力を合わせて物を引くつもりで返答。リモートの変更には触れずセーフ。"
+      },
+      {
+        "id": "pull-technical",
+        "text": "I’ll pull the latest changes from origin.",
+        "isSafe": false,
+        "reason": "origin から最新の変更を取得すると答え、Git の知識を出しました。"
+      },
+      {
+        "id": "pull-technical-2",
+        "text": "Should I rebase when I pull?",
+        "isSafe": false,
+        "reason": "pull 時に rebase するか尋ね、専門的な操作を提案したのでアウト。"
+      }
+    ]
+  },
+  {
+    "id": "clone",
+    "category": "git",
+    "dialogue": "Can you make a clone of this?",
+    "term": "clone",
+    "meaning": "Git の clone は、リポジトリを履歴などと一緒に手元へ複製する操作です。clone は一般には同じものの複製にも使います。",
+    "englishNote": "“identical” は「まったく同じ」。ここでは同じ人形を作る話として受け取ります。",
+    "replies": [
+      {
+        "id": "clone-everyday",
+        "text": "Another identical doll? I’ll need more fabric.",
+        "isSafe": true,
+        "reason": "同じ人形の複製を作るつもりで返答。リポジトリの話をせずに切り抜けました。"
+      },
+      {
+        "id": "clone-technical",
+        "text": "I’ll clone the repository over HTTPS.",
+        "isSafe": false,
+        "reason": "HTTPS でリポジトリを clone すると答え、技術の話を始めてしまいました。"
+      },
+      {
+        "id": "clone-technical-2",
+        "text": "Should I include the submodules?",
+        "isSafe": false,
+        "reason": "サブモジュールを含めるか尋ね、Git の専門知識が露呈。"
+      }
+    ]
+  },
+  {
+    "id": "checkout",
+    "category": "git",
+    "dialogue": "Can you handle the checkout?",
+    "term": "checkout",
+    "meaning": "Git の checkout はブランチや作業ツリーを切り替える操作などに使われます。日常の checkout は店の会計やホテルの退出手続き。",
+    "englishNote": "“handle” は「担当する」。“checkout” をホテルの手続きとして受け取るなら、部屋の鍵の話が自然です。",
+    "replies": [
+      {
+        "id": "checkout-everyday",
+        "text": "Sure. I’ll return the room keys.",
+        "isSafe": true,
+        "reason": "ホテルの退出手続きを担当するつもりで返答。ブランチの話をせずセーフ。"
+      },
+      {
+        "id": "checkout-technical",
+        "text": "Which branch should I check out?",
+        "isSafe": false,
+        "reason": "切り替えるブランチを尋ねたので、Git の知識を隠せませんでした。"
+      },
+      {
+        "id": "checkout-technical-2",
+        "text": "I’ll check out that commit by its hash.",
+        "isSafe": false,
+        "reason": "ハッシュでコミットを指定すると答え、専門的な操作を示したのでアウト。"
+      }
+    ]
+  },
+  {
+    "id": "remote",
+    "category": "git",
+    "dialogue": "Where’s the remote?",
+    "term": "remote",
+    "meaning": "Git の remote は、別の場所にあるリポジトリへの接続先の設定です。日常の the remote はリモコンのことも指します。",
+    "englishNote": "“under the sofa cushion” は「ソファのクッションの下」。テレビのリモコンを探す場面です。",
+    "replies": [
+      {
+        "id": "remote-everyday",
+        "text": "Try looking under the sofa cushion.",
+        "isSafe": true,
+        "reason": "テレビのリモコンの場所を答えました。リポジトリの接続先を説明しなかったのでセーフ。"
+      },
+      {
+        "id": "remote-technical",
+        "text": "The remote URL is in the Git config.",
+        "isSafe": false,
+        "reason": "Git の設定に接続先URLがあると答え、専門知識が出てしまいました。"
+      },
+      {
+        "id": "remote-technical-2",
+        "text": "I named the upstream remote origin.",
+        "isSafe": false,
+        "reason": "リモートに origin と名付けたと答え、Git の話を始めたのでアウト。"
+      }
+    ]
+  },
+  {
+    "id": "reset",
+    "category": "git",
+    "dialogue": "Should we reset it?",
+    "term": "reset",
+    "meaning": "Git の reset は、ブランチの指す位置やステージ、作業ツリーなどを変更する操作です。オプションによって影響する範囲が違います。",
+    "englishNote": "日常の reset は「設定し直す」。“set the alarm for …” はアラームの時刻を指定する表現です。",
+    "replies": [
+      {
+        "id": "reset-everyday",
+        "text": "Yes, set the alarm for seven this time.",
+        "isSafe": true,
+        "reason": "目覚まし時計の設定をし直す話として返答。Git の操作を説明せずセーフ。"
+      },
+      {
+        "id": "reset-technical",
+        "text": "Should we use a soft reset?",
+        "isSafe": false,
+        "reason": "soft reset という Git の方式を出したのでアウト。"
+      },
+      {
+        "id": "reset-technical-2",
+        "text": "I’ll move HEAD back to the previous commit.",
+        "isSafe": false,
+        "reason": "HEAD を前のコミットに戻すと答え、専門知識を見せてしまいました。"
+      }
+    ]
+  },
+  {
+    "id": "head",
+    "category": "git",
+    "dialogue": "Where’s the head?",
+    "term": "HEAD",
+    "meaning": "Git の HEAD は、現在チェックアウトしている位置を示す参照です。通常はブランチを通してコミットを指します。",
+    "englishNote": "日常の head は「頭」。“at the top” は「一番上」。ここでは雪だるまを組み立てているつもりの返答です。",
+    "replies": [
+      {
+        "id": "head-everyday",
+        "text": "The snowman’s head? At the top, I hope.",
+        "isSafe": true,
+        "reason": "雪だるまの頭の場所として返答。Git の参照には触れずセーフ。"
+      },
+      {
+        "id": "head-technical",
+        "text": "HEAD points to the current commit.",
+        "isSafe": false,
+        "reason": "HEAD が現在のコミットを指すと説明し、専門知識を出してしまいました。"
+      },
+      {
+        "id": "head-technical-2",
+        "text": "We’re in a detached HEAD state.",
+        "isSafe": false,
+        "reason": "detached HEAD という状態を出したのでアウト。"
+      }
+    ]
+  },
+  {
+    "id": "blame",
+    "category": "git",
+    "dialogue": "Who should we blame for this?",
+    "term": "git blame",
+    "meaning": "git blame は、ファイルの各行を最後に変更したコミットなどを調べるコマンドです。原因や責任を自動で断定する道具ではありません。",
+    "englishNote": "日常の blame は「責める」。“We all …” は「私たちみんなが…」。",
+    "replies": [
+      {
+        "id": "blame-everyday",
+        "text": "Nobody. We all helped bake this cake.",
+        "isSafe": true,
+        "reason": "失敗したケーキの責任の話として返答。変更履歴を調べようとしなかったのでセーフ。"
+      },
+      {
+        "id": "blame-technical",
+        "text": "I’ll run git blame on that file.",
+        "isSafe": false,
+        "reason": "git blame で調べると答え、技術知識を出したのでアウト。"
+      },
+      {
+        "id": "blame-technical-2",
+        "text": "Let’s inspect who last changed that line.",
+        "isSafe": false,
+        "reason": "コードの行の変更者を調べようと提案し、開発の文脈が露呈。"
+      }
+    ]
+  },
+  {
+    "id": "hook",
+    "category": "git",
+    "dialogue": "Could you set up a hook?",
+    "term": "hook",
+    "meaning": "Git の hook は、コミットなどの出来事に応じて処理を実行する仕組みです。日常の hook は物を掛けるフック。",
+    "englishNote": "“hang … on …” は「…を…に掛ける」。coats は上着の複数形です。",
+    "replies": [
+      {
+        "id": "hook-everyday",
+        "text": "Sure. We can hang our coats on it.",
+        "isSafe": true,
+        "reason": "上着を掛けるフックを取り付ける話として返答。自動処理の話をせずセーフ。"
+      },
+      {
+        "id": "hook-technical",
+        "text": "I’ll add a pre-commit hook.",
+        "isSafe": false,
+        "reason": "コミット前の hook を設定すると答え、Git の知識を見せました。"
+      },
+      {
+        "id": "hook-technical-2",
+        "text": "Should the hook run the linter?",
+        "isSafe": false,
+        "reason": "hook からコードの検査を実行するか尋ね、専門知識が露呈。"
+      }
+    ]
+  },
+  {
+    "id": "diff",
+    "category": "git",
+    "dialogue": "Can you spot the diff?",
+    "term": "diff",
+    "meaning": "開発の diff は、ファイルなどの変更差分や、それを比較する道具を指します。日常でも difference をくだけて diff と略すことがあります。",
+    "englishNote": "“spot” は「見つける」。“a different shade” は「少し違う色合い」。diff はくだけた略語なので、正式な文なら difference が無難です。",
+    "replies": [
+      {
+        "id": "diff-everyday",
+        "text": "Yes, the left sock is a different shade.",
+        "isSafe": true,
+        "reason": "靴下の見た目の違いを見つけました。コードの差分を説明せずセーフ。"
+      },
+      {
+        "id": "diff-technical",
+        "text": "The diff adds a new function.",
+        "isSafe": false,
+        "reason": "新しい関数が追加される差分だと説明してしまいました。"
+      },
+      {
+        "id": "diff-technical-2",
+        "text": "I’ll compare the two commits.",
+        "isSafe": false,
+        "reason": "2つのコミットを比較すると答え、Git の話を始めたのでアウト。"
+      }
+    ]
+  },
+  {
+    "id": "release",
+    "category": "git",
+    "dialogue": "Are we ready for the release?",
+    "term": "release",
+    "meaning": "開発の release は、新しい版を利用者へ届けることや、その版を指します。日常の release は、捕らえていたものを放す意味もあります。",
+    "englishNote": "“release a bird” は「鳥を放す」。“wings” は翼です。",
+    "replies": [
+      {
+        "id": "release-everyday",
+        "text": "Yes. The bird’s wings look strong again.",
+        "isSafe": true,
+        "reason": "回復した鳥を放す話として返答。ソフトウェアの版には触れずセーフ。"
+      },
+      {
+        "id": "release-technical",
+        "text": "The release build passed all tests.",
+        "isSafe": false,
+        "reason": "リリース用ビルドのテストが通ったと答え、専門知識を出してしまいました。"
+      },
+      {
+        "id": "release-technical-2",
+        "text": "I’ve updated the version number and changelog.",
+        "isSafe": false,
+        "reason": "版番号と変更履歴を更新したと答え、開発の準備が露呈。"
+      }
+    ]
+  },
+  {
+    "id": "revert",
+    "category": "git",
+    "dialogue": "Should we revert this change?",
+    "term": "revert",
+    "meaning": "Git の revert は、指定したコミットの変更を打ち消す新しいコミットを作る操作です。単に履歴を消す操作とは違います。",
+    "englishNote": "一般の revert は「元に戻る・戻す」。“the original plan” は「元の計画」です。",
+    "replies": [
+      {
+        "id": "revert-everyday",
+        "text": "Yes, the original dinner plan sounded better.",
+        "isSafe": true,
+        "reason": "夕食の計画を戻す話として返答。変更履歴の操作は説明せずセーフ。"
+      },
+      {
+        "id": "revert-technical",
+        "text": "I’ll create a revert commit.",
+        "isSafe": false,
+        "reason": "打ち消すコミットを作ると答え、Git の知識を見せてしまいました。"
+      },
+      {
+        "id": "revert-technical-2",
+        "text": "Which commit should git revert undo?",
+        "isSafe": false,
+        "reason": "git revert の対象コミットを尋ね、専門的な操作の話をしたのでアウト。"
+      }
+    ]
+  },
+  {
+    "id": "port",
+    "category": "web",
+    "dialogue": "Is this port open?",
+    "term": "port",
+    "meaning": "ネットワークの port は、通信の宛先のサービスなどを区別する番号です。日常の port は港を意味します。",
+    "englishNote": "“ferry” はフェリー。“boarding” は乗り物に乗ること。港が開いているかという話です。",
+    "replies": [
+      {
+        "id": "port-everyday",
+        "text": "Yes, the ferry is boarding passengers.",
+        "isSafe": true,
+        "reason": "港の営業状況として返答。通信の番号や接続の話をせずセーフ。"
+      },
+      {
+        "id": "port-technical",
+        "text": "Yes, the service is listening on port 443.",
+        "isSafe": false,
+        "reason": "443番ポートで待ち受けていると答え、ネットワークの知識が露呈。"
+      },
+      {
+        "id": "port-technical-2",
+        "text": "I’ll check the firewall rules for that port.",
+        "isSafe": false,
+        "reason": "ファイアウォールのルールを調べると答え、技術の話を始めました。"
+      }
+    ]
+  },
+  {
+    "id": "socket",
+    "category": "web",
+    "dialogue": "Can you check the socket?",
+    "term": "socket",
+    "meaning": "プログラムの socket は、ネットワーク通信などの入出力の端点を扱う仕組みです。日常ではコンセントの差し込み口も socket。",
+    "englishNote": "“plug” はプラグ。“socket” の日常用法はイギリス英語などでコンセントを指すときに使います。",
+    "replies": [
+      {
+        "id": "socket-everyday",
+        "text": "The lamp’s plug seems loose.",
+        "isSafe": true,
+        "reason": "ランプを差すコンセントを調べるつもりで返答。通信の話をせずセーフ。"
+      },
+      {
+        "id": "socket-technical",
+        "text": "I’ll inspect the TCP connection.",
+        "isSafe": false,
+        "reason": "TCP 接続を調べると答え、ネットワークの知識を出しました。"
+      },
+      {
+        "id": "socket-technical-2",
+        "text": "I’ll inspect the socket’s receive buffer.",
+        "isSafe": false,
+        "reason": "通信データの受信用バッファを調べると答え、専門知識を出してしまいました。"
+      }
+    ]
+  },
+  {
+    "id": "host",
+    "category": "web",
+    "dialogue": "Who’s the host tonight?",
+    "term": "host",
+    "meaning": "ネットワークの host は、接続されたコンピューターなどを指します。日常では来客を迎える人や催しの司会者も host。",
+    "englishNote": "“Who’s …?” は “Who is …?” の縮約形。“welcome everyone” は「みんなを迎える」。",
+    "replies": [
+      {
+        "id": "host-everyday",
+        "text": "Maya is welcoming everyone at the door.",
+        "isSafe": true,
+        "reason": "パーティーの主催者を答えました。コンピューターの話をしなかったのでセーフ。"
+      },
+      {
+        "id": "host-technical",
+        "text": "The host is a virtual machine in our cloud account.",
+        "isSafe": false,
+        "reason": "クラウドの仮想マシンだと説明し、技術知識を出してしまいました。"
+      },
+      {
+        "id": "host-technical-2",
+        "text": "I’ll resolve its hostname to an IP address.",
+        "isSafe": false,
+        "reason": "ホスト名から IP アドレスを調べると答え、ネットワークの話が露呈。"
+      }
+    ]
+  },
+  {
+    "id": "client",
+    "category": "web",
+    "dialogue": "Has the client arrived?",
+    "term": "client",
+    "meaning": "ネットワークの client は、サーバーに要求を送る側のプログラムなど。日常では仕事を依頼する顧客も client。",
+    "englishNote": "“arrive” は「到着する」。“waiting room” は待合室です。",
+    "replies": [
+      {
+        "id": "client-everyday",
+        "text": "Yes, she’s in the waiting room.",
+        "isSafe": true,
+        "reason": "訪ねてきた顧客の話として返答。サーバーへの通信には触れずセーフ。"
+      },
+      {
+        "id": "client-technical",
+        "text": "The client has connected to the API server.",
+        "isSafe": false,
+        "reason": "API サーバーに接続済みと答え、専門知識を出しました。"
+      },
+      {
+        "id": "client-technical-2",
+        "text": "I’ll inspect the client-side request headers.",
+        "isSafe": false,
+        "reason": "クライアント側の要求ヘッダーを調べると答え、技術の話を始めたのでアウト。"
+      }
+    ]
+  },
+  {
+    "id": "response",
+    "category": "web",
+    "dialogue": "Are we still waiting for a response?",
+    "term": "response",
+    "meaning": "Web の response は、サーバーなどが要求に対して返す応答です。HTTP では状態コード・ヘッダー・本文などで構成されます。",
+    "englishNote": "日常の response は「返答・反応」。“invitation” は招待状です。",
+    "replies": [
+      {
+        "id": "response-everyday",
+        "text": "Yes, he hasn’t replied to the invitation yet.",
+        "isSafe": true,
+        "reason": "招待の返事を待つ話として返答。HTTP の応答には触れずセーフ。"
+      },
+      {
+        "id": "response-technical",
+        "text": "The HTTP response timed out.",
+        "isSafe": false,
+        "reason": "HTTP の応答待ちがタイムアウトしたと答え、技術の文脈が露呈。"
+      },
+      {
+        "id": "response-technical-2",
+        "text": "I’ll inspect the response status and body.",
+        "isSafe": false,
+        "reason": "応答の状態と本文を調べると答え、専門知識を出したのでアウト。"
+      }
+    ]
+  },
+  {
+    "id": "request",
+    "category": "web",
+    "dialogue": "Can you send a request?",
+    "term": "request",
+    "meaning": "HTTP の request は、ブラウザーなどのクライアントがサーバーへ送る要求です。一般には依頼や希望を表します。",
+    "englishNote": "“request a song” は曲をリクエストすること。“DJ” は音楽を選んで流す人です。",
+    "replies": [
+      {
+        "id": "request-everyday",
+        "text": "Sure. I’ll ask the DJ for our favorite song.",
+        "isSafe": true,
+        "reason": "好きな曲のリクエストをするつもりで返答。HTTP の要求には触れずセーフ。"
+      },
+      {
+        "id": "request-technical",
+        "text": "I’ll send a POST request to the endpoint.",
+        "isSafe": false,
+        "reason": "エンドポイントへ POST を送ると答え、Web の知識を出してしまいました。"
+      },
+      {
+        "id": "request-technical-2",
+        "text": "What JSON body should the request include?",
+        "isSafe": false,
+        "reason": "JSON の本文に入れるデータを尋ね、技術の話を始めました。"
+      }
+    ]
+  },
+  {
+    "id": "session",
+    "category": "web",
+    "dialogue": "How long will this session last?",
+    "term": "session",
+    "meaning": "Web の session は、利用者の一連のやり取りや、その状態を管理する仕組みなどを指します。日常では会合や練習のひとまとまり。",
+    "englishNote": "“last” は動詞で「続く」。“practice session” は練習の時間です。",
+    "replies": [
+      {
+        "id": "session-everyday",
+        "text": "Band practice should finish by nine.",
+        "isSafe": true,
+        "reason": "バンドの練習時間として返答。Web の状態管理には触れなかったのでセーフ。"
+      },
+      {
+        "id": "session-technical",
+        "text": "The login session expires after thirty minutes.",
+        "isSafe": false,
+        "reason": "ログインセッションの期限を答え、技術の意味で捉えたのでアウト。"
+      },
+      {
+        "id": "session-technical-2",
+        "text": "I’ll check the session store’s expiration setting.",
+        "isSafe": false,
+        "reason": "セッション保存先の期限設定を調べると答え、専門知識が露呈。"
+      }
+    ]
+  },
+  {
+    "id": "token",
+    "category": "web",
+    "dialogue": "Do you have a token?",
+    "term": "token",
+    "meaning": "認証などに使う token は、権限や状態を表す文字列などです。日常では機械に入れる代用硬貨や小さな印も token。",
+    "englishNote": "“arcade” はゲームセンター。“token” は、店内の機械などで使う専用のコインも指します。",
+    "replies": [
+      {
+        "id": "token-everyday",
+        "text": "Yes, I saved one for the arcade machine.",
+        "isSafe": true,
+        "reason": "ゲーム機に入れるコインとして返答。認証情報の話をしなかったのでセーフ。"
+      },
+      {
+        "id": "token-technical",
+        "text": "I’ll put the bearer token in the Authorization header.",
+        "isSafe": false,
+        "reason": "認証用のヘッダーに token を入れると答え、専門知識を出しました。"
+      },
+      {
+        "id": "token-technical-2",
+        "text": "The access token needs to be refreshed.",
+        "isSafe": false,
+        "reason": "アクセストークンの更新に触れ、認証の話を始めたのでアウト。"
+      }
+    ]
+  },
+  {
+    "id": "route",
+    "category": "web",
+    "dialogue": "Which route should we use?",
+    "term": "route",
+    "meaning": "Web の route は、URLなどを対応する処理へ振り分ける設定や経路を指します。日常では道順や移動経路です。",
+    "englishNote": "“avoid” は「避ける」。“the roadworks” は道路工事。“route” の発音は地域によって違うことがあります。",
+    "replies": [
+      {
+        "id": "route-everyday",
+        "text": "Let’s avoid the roadworks and go by the park.",
+        "isSafe": true,
+        "reason": "公園を通る道順を提案。URL の振り分けを説明しなかったのでセーフ。"
+      },
+      {
+        "id": "route-technical",
+        "text": "I’ll add a GET route for that URL.",
+        "isSafe": false,
+        "reason": "GET 要求の route を追加すると答え、Web の知識を出しました。"
+      },
+      {
+        "id": "route-technical-2",
+        "text": "Which handler should this route call?",
+        "isSafe": false,
+        "reason": "route が呼ぶ処理を尋ね、開発の文脈が露呈。"
+      }
+    ]
+  },
+  {
+    "id": "redirect",
+    "category": "web",
+    "dialogue": "Can you redirect them?",
+    "term": "redirect",
+    "meaning": "Web の redirect は、別のURLへ移動するようクライアントに知らせることなどを指します。一般には人や物の向きを変えること。",
+    "englishNote": "“point someone toward …” は「人に…の方向を示す」。“the other entrance” はもう一つの入口です。",
+    "replies": [
+      {
+        "id": "redirect-everyday",
+        "text": "Sure, I’ll point the visitors toward the other entrance.",
+        "isSafe": true,
+        "reason": "来客を別の入口へ案内するつもりで返答。URL の話をせずセーフ。"
+      },
+      {
+        "id": "redirect-technical",
+        "text": "I’ll return an HTTP redirect response.",
+        "isSafe": false,
+        "reason": "HTTP のリダイレクト応答を返すと答え、技術知識を見せました。"
+      },
+      {
+        "id": "redirect-technical-2",
+        "text": "Should the redirect preserve the request method?",
+        "isSafe": false,
+        "reason": "移動先でも要求メソッドを維持するか尋ね、専門的な話をしたのでアウト。"
+      }
+    ]
+  },
+  {
+    "id": "payload",
+    "category": "web",
+    "dialogue": "How heavy is the payload?",
+    "term": "payload",
+    "meaning": "通信の payload は、伝送する実際のデータ部分を指します。日常や航空の文脈では乗せる荷物などの重量・積載物です。",
+    "englishNote": "“payload” は運ぶために積む物。“box” は箱、“kilo” は kilogram のくだけた略です。",
+    "replies": [
+      {
+        "id": "payload-everyday",
+        "text": "Those boxes weigh about twenty kilos.",
+        "isSafe": true,
+        "reason": "積む箱の重さを答えました。通信データの話をしなかったのでセーフ。"
+      },
+      {
+        "id": "payload-technical",
+        "text": "The JSON payload is about twenty kilobytes.",
+        "isSafe": false,
+        "reason": "JSON のデータ量を答え、技術知識を出してしまいました。"
+      },
+      {
+        "id": "payload-technical-2",
+        "text": "We can compress the request payload.",
+        "isSafe": false,
+        "reason": "要求のデータを圧縮できると答え、通信の話を始めたのでアウト。"
+      }
+    ]
+  },
+  {
+    "id": "header",
+    "category": "web",
+    "dialogue": "What should we put in the header?",
+    "term": "header",
+    "meaning": "HTTP の header は要求や応答に付くメタデータの項目です。文書の header は、ページの上部に置く見出しなど。",
+    "englishNote": "“at the top of every page” は「各ページの上部」。ここでは文書のヘッダーを相談しています。",
+    "replies": [
+      {
+        "id": "header-everyday",
+        "text": "Our club’s name at the top of every page.",
+        "isSafe": true,
+        "reason": "文書の上部に部活の名前を置くつもりで返答。HTTP の設定を説明せずセーフ。"
+      },
+      {
+        "id": "header-technical",
+        "text": "We need a Content-Type header.",
+        "isSafe": false,
+        "reason": "Content-Type という HTTP ヘッダーを提案したのでアウト。"
+      },
+      {
+        "id": "header-technical-2",
+        "text": "I’ll add the authentication header.",
+        "isSafe": false,
+        "reason": "認証用のヘッダーを追加すると答え、技術の文脈を示してしまいました。"
+      }
+    ]
+  },
+  {
+    "id": "body",
+    "category": "web",
+    "dialogue": "Can you check the body?",
+    "term": "body",
+    "meaning": "HTTP の body は、要求や応答に含める本文やデータの部分です。日常の body は体や物の胴体にも使います。",
+    "englishNote": "“body of a car” は車の車体。“scratch” は引っかき傷です。",
+    "replies": [
+      {
+        "id": "body-everyday",
+        "text": "The car has a scratch on the left side.",
+        "isSafe": true,
+        "reason": "車体の傷を確かめる話として返答。通信データには触れずセーフ。"
+      },
+      {
+        "id": "body-technical",
+        "text": "I’ll parse the response body as JSON.",
+        "isSafe": false,
+        "reason": "応答の本文を JSON として読み取ると答え、専門知識を出しました。"
+      },
+      {
+        "id": "body-technical-2",
+        "text": "The request body is missing a required field.",
+        "isSafe": false,
+        "reason": "要求本文の必須項目がないと指摘し、技術の話を始めたのでアウト。"
+      }
+    ]
+  },
+  {
+    "id": "anchor",
+    "category": "web",
+    "dialogue": "Could you drop the anchor here?",
+    "term": "anchor",
+    "meaning": "Web の anchor はリンクの要素や、ページ内の移動先の目印などを指します。日常の anchor は船のいかりです。",
+    "englishNote": "“drop the anchor” は船のいかりを下ろす表現。“seabed” は海底です。",
+    "replies": [
+      {
+        "id": "anchor-everyday",
+        "text": "Is the seabed deep enough for our boat?",
+        "isSafe": true,
+        "reason": "船を泊めるための海底を尋ねました。リンクの話をせずセーフ。"
+      },
+      {
+        "id": "anchor-technical",
+        "text": "I’ll add an anchor element with an href.",
+        "isSafe": false,
+        "reason": "href を持つ anchor 要素を追加すると答え、HTML の知識が露呈。"
+      },
+      {
+        "id": "anchor-technical-2",
+        "text": "Should the anchor link to a section ID?",
+        "isSafe": false,
+        "reason": "ページ内の section の ID へ移動するか尋ね、Web の話をしたのでアウト。"
+      }
+    ]
+  },
+  {
+    "id": "refresh",
+    "category": "web",
+    "dialogue": "Could you refresh it?",
+    "term": "refresh",
+    "meaning": "Web の refresh はページを再読み込みして内容を更新することなどです。一般には新しくする・元気を取り戻させる意味もあります。",
+    "englishNote": "“fresh water” は新しい水。“vase” は花びん。“refresh” を花を元気にする話として受け取るギャグです。",
+    "replies": [
+      {
+        "id": "refresh-everyday",
+        "text": "Sure, I’ll give the flowers some fresh water.",
+        "isSafe": true,
+        "reason": "花びんの水を替える話として返答。ブラウザーの再読み込みには触れずセーフ。"
+      },
+      {
+        "id": "refresh-technical",
+        "text": "I’ll reload the page without using the cache.",
+        "isSafe": false,
+        "reason": "キャッシュを使わず再読み込みすると答え、Web の知識を出しました。"
+      },
+      {
+        "id": "refresh-technical-2",
+        "text": "I’ll fetch the latest data and re-render the page.",
+        "isSafe": false,
+        "reason": "最新データを取得して描画すると答え、技術の話を始めたのでアウト。"
+      }
+    ]
+  },
+  {
+    "id": "table",
+    "category": "database",
+    "dialogue": "Can you clear the table?",
+    "term": "table",
+    "meaning": "データベースの table は、行と列でデータを持つ表です。日常の table は食事などに使うテーブル。",
+    "englishNote": "“clear the table” は食器などを片付けるときの表現。“plates” は皿です。",
+    "replies": [
+      {
+        "id": "table-everyday",
+        "text": "Sure, I’ll take the plates to the kitchen.",
+        "isSafe": true,
+        "reason": "食卓の皿を片付けるつもりで返答。データを消す話をせずセーフ。"
+      },
+      {
+        "id": "table-technical",
+        "text": "Should I delete all the rows?",
+        "isSafe": false,
+        "reason": "表の全行を削除するか尋ね、データベースの話を始めました。"
+      },
+      {
+        "id": "table-technical-2",
+        "text": "I’ll run a TRUNCATE statement.",
+        "isSafe": false,
+        "reason": "TRUNCATE という SQL の操作を出したのでアウト。"
+      }
+    ]
+  },
+  {
+    "id": "row",
+    "category": "database",
+    "dialogue": "Which row is yours?",
+    "term": "row",
+    "meaning": "データベースの row は、表の1行で、1件のデータを表すことが多いです。日常でも座席や物が並ぶ列を row と呼びます。",
+    "englishNote": "“the third row” は前から数えた3列目など。“stage” は舞台です。",
+    "replies": [
+      {
+        "id": "row-everyday",
+        "text": "The third one from the stage.",
+        "isSafe": true,
+        "reason": "劇場の座席の列として返答。データの1件を説明せずセーフ。"
+      },
+      {
+        "id": "row-technical",
+        "text": "The row with my user ID in the primary key column.",
+        "isSafe": false,
+        "reason": "主キーの列で自分のユーザーIDを持つ行だと答え、専門知識が露呈。"
+      },
+      {
+        "id": "row-technical-2",
+        "text": "I’ll select my row with a WHERE clause.",
+        "isSafe": false,
+        "reason": "WHERE 条件で行を選ぶと答え、SQL の話をしたのでアウト。"
+      }
+    ]
+  },
+  {
+    "id": "column",
+    "category": "database",
+    "dialogue": "Is that column strong enough?",
+    "term": "column",
+    "meaning": "データベースの column は、表の項目を縦方向にまとめた列です。日常の column は建物の柱にも使います。",
+    "englishNote": "“hold up the roof” は「屋根を支える」。“column” を柱として受け取る返答です。",
+    "replies": [
+      {
+        "id": "column-everyday",
+        "text": "It needs to hold up the roof.",
+        "isSafe": true,
+        "reason": "建物の柱が屋根を支える話として返答。データの型を説明せずセーフ。"
+      },
+      {
+        "id": "column-technical",
+        "text": "The column uses an integer data type.",
+        "isSafe": false,
+        "reason": "整数型の列だと説明し、データベースの話を始めてしまいました。"
+      },
+      {
+        "id": "column-technical-2",
+        "text": "I’ll add a NOT NULL constraint to that column.",
+        "isSafe": false,
+        "reason": "NULL を認めない制約を追加すると答え、SQL の知識が露呈。"
+      }
+    ]
+  },
+  {
+    "id": "index",
+    "category": "database",
+    "dialogue": "Where’s the index?",
+    "term": "index",
+    "meaning": "データベースの index は、検索などを速くするためのデータ構造です。日常では本の末尾にある索引も index。",
+    "englishNote": "“the back of the book” は本の末尾。“index” は目的の項目を探すための索引です。",
+    "replies": [
+      {
+        "id": "index-everyday",
+        "text": "At the back of the book.",
+        "isSafe": true,
+        "reason": "本の索引の場所を答えました。データベースの検索方式を話さずセーフ。"
+      },
+      {
+        "id": "index-technical",
+        "text": "There’s an index on the email column.",
+        "isSafe": false,
+        "reason": "メールアドレスの列に index があると答え、専門知識を出しました。"
+      },
+      {
+        "id": "index-technical-2",
+        "text": "I’ll inspect the query plan to see if it uses the index.",
+        "isSafe": false,
+        "reason": "検索の実行計画で index の使用を調べると答え、技術の話が露呈。"
+      }
+    ]
+  },
+  {
+    "id": "view",
+    "category": "database",
+    "dialogue": "Do you like this view?",
+    "term": "view",
+    "meaning": "データベースの view は、問い合わせの結果を表のように扱う仕組みです。一般の view は景色や眺め。",
+    "englishNote": "“sunset” は日没の景色。“from here” は「ここから」。",
+    "replies": [
+      {
+        "id": "view-everyday",
+        "text": "Yes, the sunset looks amazing from here.",
+        "isSafe": true,
+        "reason": "夕日の眺めを楽しむ返答。データの問い合わせには触れずセーフ。"
+      },
+      {
+        "id": "view-technical",
+        "text": "Yes, the SQL view hides the complex joins.",
+        "isSafe": false,
+        "reason": "SQL の view が複雑な結合を隠すと説明し、専門知識を出しました。"
+      },
+      {
+        "id": "view-technical-2",
+        "text": "I’ll update the view definition.",
+        "isSafe": false,
+        "reason": "view の定義を更新すると答え、データベースの話を始めました。"
+      }
+    ]
+  },
+  {
+    "id": "query",
+    "category": "database",
+    "dialogue": "Can you help me with a query?",
+    "term": "query",
+    "meaning": "データベースの query は、データを取得・操作する問い合わせです。一般には質問や疑問を意味します。",
+    "englishNote": "“query” は質問を表す少し改まった言葉です。“What would you like to know?” は「何を知りたいですか？」。",
+    "replies": [
+      {
+        "id": "query-everyday",
+        "text": "Of course. What would you like to know?",
+        "isSafe": true,
+        "reason": "相手の質問を聞こうとしました。SQL を説明しなかったのでセーフ。"
+      },
+      {
+        "id": "query-technical",
+        "text": "Sure. I’ll write a SELECT query.",
+        "isSafe": false,
+        "reason": "SELECT の問い合わせを書くと答え、データベースの知識が露呈。"
+      },
+      {
+        "id": "query-technical-2",
+        "text": "Which database should I run the query against?",
+        "isSafe": false,
+        "reason": "どのデータベースへ問い合わせるか尋ね、技術の話を始めました。"
+      }
+    ]
+  },
+  {
+    "id": "join",
+    "category": "database",
+    "dialogue": "Can you join us?",
+    "term": "join",
+    "meaning": "SQL の join は、条件などに基づいて複数の表のデータを組み合わせる操作です。日常の join は人の集まりに加わること。",
+    "englishNote": "“join us” は「私たちに加わる」。“dinner” は夕食です。",
+    "replies": [
+      {
+        "id": "join-everyday",
+        "text": "Yes, I’d love to come to dinner.",
+        "isSafe": true,
+        "reason": "夕食に参加する話として返答。表同士の結合には触れずセーフ。"
+      },
+      {
+        "id": "join-technical",
+        "text": "Should I use an INNER JOIN?",
+        "isSafe": false,
+        "reason": "INNER JOIN という SQL の方式を出したのでアウト。"
+      },
+      {
+        "id": "join-technical-2",
+        "text": "I’ll join the tables on their user IDs.",
+        "isSafe": false,
+        "reason": "ユーザーIDで表を結合すると答え、専門知識を出してしまいました。"
+      }
+    ]
+  },
+  {
+    "id": "transaction",
+    "category": "database",
+    "dialogue": "Did the transaction go through?",
+    "term": "transaction",
+    "meaning": "データベースの transaction は、複数の処理をひとまとまりとして扱う仕組みです。一般には売買や支払いなどの取引。",
+    "englishNote": "“go through” は手続きなどが「完了する」。“receipt” はレシートです。",
+    "replies": [
+      {
+        "id": "transaction-everyday",
+        "text": "Yes, the cashier gave me a receipt.",
+        "isSafe": true,
+        "reason": "店での支払い完了を答えました。データベースの処理には触れずセーフ。"
+      },
+      {
+        "id": "transaction-technical",
+        "text": "Yes, the database transaction committed.",
+        "isSafe": false,
+        "reason": "データベースで commit したと答え、技術の文脈が露呈。"
+      },
+      {
+        "id": "transaction-technical-2",
+        "text": "I’ll check whether the transaction rolled back.",
+        "isSafe": false,
+        "reason": "処理が取り消されたかを調べると答え、専門知識を出しました。"
+      }
+    ]
+  },
+  {
+    "id": "record",
+    "category": "database",
+    "dialogue": "Have you found the record?",
+    "term": "record",
+    "meaning": "データベースの record は、1件のまとまったデータを指すことがあります。日常では音楽のレコードも record。",
+    "englishNote": "“record” は名詞と動詞でアクセントが異なります。ここでは名詞の音楽レコード。“turntable” はレコードプレーヤーです。",
+    "replies": [
+      {
+        "id": "record-everyday",
+        "text": "Yes, it’s next to the turntable.",
+        "isSafe": true,
+        "reason": "音楽レコードの場所を答えました。保存データの話をせずセーフ。"
+      },
+      {
+        "id": "record-technical",
+        "text": "Yes, I found the record by its ID.",
+        "isSafe": false,
+        "reason": "IDでデータの1件を検索したと答え、技術知識を出しました。"
+      },
+      {
+        "id": "record-technical-2",
+        "text": "I’ll update the record in the users table.",
+        "isSafe": false,
+        "reason": "users の表のデータを更新すると答え、データベースの話を始めました。"
+      }
+    ]
+  },
+  {
+    "id": "migration",
+    "category": "database",
+    "dialogue": "When does the migration begin?",
+    "term": "migration",
+    "meaning": "開発の migration は、データや構造を新しい状態へ移す処理です。データベースの schema migration は表などの構造変更を管理します。",
+    "englishNote": "日常の migration は人や動物の移動。“birds fly south” は「鳥が南へ飛ぶ」です。",
+    "replies": [
+      {
+        "id": "migration-everyday",
+        "text": "The birds usually fly south in autumn.",
+        "isSafe": true,
+        "reason": "渡り鳥の移動時期を答えました。データの移行には触れずセーフ。"
+      },
+      {
+        "id": "migration-technical",
+        "text": "I’ll run the database schema migration tonight.",
+        "isSafe": false,
+        "reason": "データベースの構造変更を実行すると答え、専門知識を出しました。"
+      },
+      {
+        "id": "migration-technical-2",
+        "text": "We need to apply the pending migration scripts.",
+        "isSafe": false,
+        "reason": "未適用の移行スクリプトを実行すると答え、技術の話が露呈。"
+      }
+    ]
+  },
+  {
+    "id": "relation",
+    "category": "database",
+    "dialogue": "What’s the relation between these two?",
+    "term": "relation",
+    "meaning": "データベースの relation は、リレーショナルモデルでデータの集合を表す概念です。日常の relation は関係や親族を指すことがあります。",
+    "englishNote": "“cousins” はいとこたち。“between these two” は「この2者の間」です。",
+    "replies": [
+      {
+        "id": "relation-everyday",
+        "text": "They’re cousins, I think.",
+        "isSafe": true,
+        "reason": "2人の親族関係を答えました。データモデルを説明せずセーフ。"
+      },
+      {
+        "id": "relation-technical",
+        "text": "They’re linked by a foreign key.",
+        "isSafe": false,
+        "reason": "外部キーで関連付くと答え、データベースの知識を出してしまいました。"
+      },
+      {
+        "id": "relation-technical-2",
+        "text": "It’s a one-to-many relationship between the tables.",
+        "isSafe": false,
+        "reason": "表同士の1対多の関係だと説明し、専門知識が露呈。"
+      }
+    ]
+  },
+  {
+    "id": "lock",
+    "category": "database",
+    "dialogue": "Who has the lock?",
+    "term": "lock",
+    "meaning": "データベースなどの lock は、同時に行う処理を調整してデータなどを保護する仕組みです。日常の lock は錠前。",
+    "englishNote": "“padlock” は南京錠。“bike” は自転車です。",
+    "replies": [
+      {
+        "id": "lock-everyday",
+        "text": "I have the padlock for the bikes.",
+        "isSafe": true,
+        "reason": "自転車用の錠前を持っていると答えました。処理の排他制御には触れずセーフ。"
+      },
+      {
+        "id": "lock-technical",
+        "text": "Another transaction is holding the row lock.",
+        "isSafe": false,
+        "reason": "別の処理が行の lock を持つと説明し、専門知識を出してしまいました。"
+      },
+      {
+        "id": "lock-technical-2",
+        "text": "I’ll inspect the database’s lock wait queue.",
+        "isSafe": false,
+        "reason": "データベースの lock 待ちを調べると答え、技術の話を始めました。"
+      }
+    ]
+  },
+  {
+    "id": "trigger",
+    "category": "database",
+    "dialogue": "What could trigger it?",
+    "term": "trigger",
+    "meaning": "データベースの trigger は、挿入や更新などの出来事をきっかけに処理を実行する仕組みです。一般の trigger は何かを引き起こすきっかけ。",
+    "englishNote": "“trigger” は動詞で「引き起こす」。“sneeze” はくしゃみ、“dusty” はほこりっぽいことです。",
+    "replies": [
+      {
+        "id": "trigger-everyday",
+        "text": "A dusty room might make me sneeze.",
+        "isSafe": true,
+        "reason": "くしゃみが出るきっかけを答えました。データベースの自動処理には触れずセーフ。"
+      },
+      {
+        "id": "trigger-technical",
+        "text": "An INSERT statement would fire the trigger.",
+        "isSafe": false,
+        "reason": "INSERT 文で trigger が動くと答え、SQL の知識が露呈。"
+      },
+      {
+        "id": "trigger-technical-2",
+        "text": "I’ll create a trigger that runs after each update.",
+        "isSafe": false,
+        "reason": "更新後に動く処理を作ると答え、データベースの話を始めました。"
+      }
+    ]
+  },
+  {
+    "id": "sequence",
+    "category": "database",
+    "dialogue": "What comes next in the sequence?",
+    "term": "sequence",
+    "meaning": "データベースの sequence は、連番などの値を生成する仕組みです。一般には順番に並んだものや手順の流れ。",
+    "englishNote": "“step” は手順やダンスのステップ。“spin around” はくるっと回ることです。",
+    "replies": [
+      {
+        "id": "sequence-everyday",
+        "text": "Two steps to the left, then spin around.",
+        "isSafe": true,
+        "reason": "ダンスの動きの順番を答えました。連番生成の話をせずセーフ。"
+      },
+      {
+        "id": "sequence-technical",
+        "text": "I’ll ask the database sequence for its next value.",
+        "isSafe": false,
+        "reason": "データベースから次の連番を取得すると答え、専門知識を出しました。"
+      },
+      {
+        "id": "sequence-technical-2",
+        "text": "We should increment the sequence used for IDs.",
+        "isSafe": false,
+        "reason": "IDに使う sequence を増やすと答え、技術の意味が露呈。"
+      }
+    ]
+  },
+  {
+    "id": "dump",
+    "category": "database",
+    "dialogue": "Can you take a look at this dump?",
+    "term": "dump",
+    "meaning": "開発の dump は、データベースやメモリーなどの内容を書き出したものを指します。日常では廃棄物を集める場所も dump。",
+    "englishNote": "“dump” はごみ捨て場などを指します。“recycle” は再利用できるように回収することです。",
+    "replies": [
+      {
+        "id": "dump-everyday",
+        "text": "Some of this rubbish could be recycled.",
+        "isSafe": true,
+        "reason": "ごみ捨て場の廃棄物を見たつもりで返答。書き出したデータには触れずセーフ。"
+      },
+      {
+        "id": "dump-technical",
+        "text": "I’ll restore the SQL dump into a test database.",
+        "isSafe": false,
+        "reason": "SQL の dump をテスト用DBへ復元すると答え、専門知識を見せました。"
+      },
+      {
+        "id": "dump-technical-2",
+        "text": "The dump includes the table definitions and data.",
+        "isSafe": false,
+        "reason": "表の定義やデータが入ると説明し、技術の文脈が露呈。"
+      }
+    ]
+  },
+  {
+    "id": "bucket",
+    "category": "cloud",
+    "dialogue": "Is the bucket full?",
+    "term": "bucket",
+    "meaning": "クラウドの bucket は、オブジェクトストレージでファイルなどをまとめる保存先です。日常の bucket はバケツ。",
+    "englishNote": "“spill” は液体などがこぼれること。“full” はいっぱいの状態です。",
+    "replies": [
+      {
+        "id": "bucket-everyday",
+        "text": "Yes, the water is about to spill over.",
+        "isSafe": true,
+        "reason": "水の入ったバケツの話として返答。ファイル保存先には触れずセーフ。"
+      },
+      {
+        "id": "bucket-technical",
+        "text": "I’ll check the object storage bucket’s usage.",
+        "isSafe": false,
+        "reason": "保存先の使用量を調べると答え、クラウドの知識が露呈。"
+      },
+      {
+        "id": "bucket-technical-2",
+        "text": "We should delete old objects from the bucket.",
+        "isSafe": false,
+        "reason": "古いオブジェクトを削除すると答え、技術の話を始めてしまいました。"
+      }
+    ]
+  },
+  {
+    "id": "queue",
+    "category": "cloud",
+    "dialogue": "How long is the queue?",
+    "term": "queue",
+    "meaning": "プログラムの queue は、処理待ちのデータなどを管理する仕組みです。先に入れたものから取り出す方式が基本です。日常では待ち行列。",
+    "englishNote": "“queue” はイギリス英語でよく使う待ち行列。“around the corner” は「角を曲がった先まで」。",
+    "replies": [
+      {
+        "id": "queue-everyday",
+        "text": "It goes all the way around the corner.",
+        "isSafe": true,
+        "reason": "店に並ぶ人の列を答えました。メッセージの処理待ちには触れずセーフ。"
+      },
+      {
+        "id": "queue-technical",
+        "text": "There are a hundred messages waiting for the consumer.",
+        "isSafe": false,
+        "reason": "処理する側を待つメッセージ数を答え、専門知識を出しました。"
+      },
+      {
+        "id": "queue-technical-2",
+        "text": "I’ll check the queue depth and processing rate.",
+        "isSafe": false,
+        "reason": "queue の件数と処理速度を調べると答え、技術の文脈が露呈。"
+      }
+    ]
+  },
+  {
+    "id": "stack",
+    "category": "cloud",
+    "dialogue": "Can you tidy up this stack?",
+    "term": "stack",
+    "meaning": "開発の stack は、最後に入れたものを先に取り出すデータ構造など。技術の組み合わせを指すこともあります。日常では積み重ねた物。",
+    "englishNote": "“stack of books” は本の山。“shelf” は棚です。",
+    "replies": [
+      {
+        "id": "stack-everyday",
+        "text": "Sure, I’ll put the books on the shelf.",
+        "isSafe": true,
+        "reason": "積んだ本を片付けるつもりで返答。データ構造の話をせずセーフ。"
+      },
+      {
+        "id": "stack-technical",
+        "text": "I’ll inspect the call stack.",
+        "isSafe": false,
+        "reason": "関数呼び出しの stack を調べると答え、専門知識を出してしまいました。"
+      },
+      {
+        "id": "stack-technical-2",
+        "text": "Should I pop the top element off the stack?",
+        "isSafe": false,
+        "reason": "stack の一番上を pop するか尋ね、データ構造の知識が露呈。"
+      }
+    ]
+  },
+  {
+    "id": "pool",
+    "category": "cloud",
+    "dialogue": "How big is the pool?",
+    "term": "pool",
+    "meaning": "開発の pool は、接続やスレッドなどの資源をまとめて管理し再利用する仕組みです。日常では水泳用のプール。",
+    "englishNote": "“twenty-five meters long” は「長さ25メートル」。泳ぐ場所の大きさを答える表現です。",
+    "replies": [
+      {
+        "id": "pool-everyday",
+        "text": "It’s twenty-five meters long, perfect for swimming.",
+        "isSafe": true,
+        "reason": "泳ぐプールの大きさを答えました。接続の管理には触れずセーフ。"
+      },
+      {
+        "id": "pool-technical",
+        "text": "The connection pool allows twenty open connections.",
+        "isSafe": false,
+        "reason": "接続数の上限を答え、技術知識を出しました。"
+      },
+      {
+        "id": "pool-technical-2",
+        "text": "I’ll increase the thread pool size.",
+        "isSafe": false,
+        "reason": "スレッド用の pool を増やすと答え、開発の文脈が露呈。"
+      }
+    ]
+  },
+  {
+    "id": "connection",
+    "category": "cloud",
+    "dialogue": "How’s your connection?",
+    "term": "connection",
+    "meaning": "開発の connection は、通信やデータベースの接続を指します。一般には人同士のつながりなどにも使います。",
+    "englishNote": "“stay in touch” は「連絡を取り合う」。ここでは人間関係のつながりを答えます。",
+    "replies": [
+      {
+        "id": "connection-everyday",
+        "text": "My old school friend and I still stay in touch.",
+        "isSafe": true,
+        "reason": "友人とのつながりとして返答。通信設定を説明せずセーフ。"
+      },
+      {
+        "id": "connection-technical",
+        "text": "The database connection is using TLS.",
+        "isSafe": false,
+        "reason": "DB 接続が TLS を使うと答え、専門知識を出しました。"
+      },
+      {
+        "id": "connection-technical-2",
+        "text": "I’ll inspect the TCP connection’s state.",
+        "isSafe": false,
+        "reason": "TCP の接続状態を調べると答え、技術の文脈が露呈。"
+      }
+    ]
+  },
+  {
+    "id": "stream",
+    "category": "cloud",
+    "dialogue": "Can we follow this stream?",
+    "term": "stream",
+    "meaning": "開発の stream は、順に流れるデータを扱う仕組みやデータの流れです。日常の stream は小川。",
+    "englishNote": "“follow the stream” は小川に沿って進むこと。“hill” は丘です。",
+    "replies": [
+      {
+        "id": "stream-everyday",
+        "text": "Yes, it should lead us down the hill.",
+        "isSafe": true,
+        "reason": "小川に沿って歩くつもりで返答。データの処理を説明せずセーフ。"
+      },
+      {
+        "id": "stream-technical",
+        "text": "I’ll consume the stream one chunk at a time.",
+        "isSafe": false,
+        "reason": "データを区切りごとに処理すると答え、専門知識を出しました。"
+      },
+      {
+        "id": "stream-technical-2",
+        "text": "We should handle backpressure on the data stream.",
+        "isSafe": false,
+        "reason": "データの流量調整に触れ、技術の文脈が露呈。"
+      }
+    ]
+  },
+  {
+    "id": "pipeline",
+    "category": "cloud",
+    "dialogue": "Is the pipeline working?",
+    "term": "pipeline",
+    "meaning": "開発の pipeline は、ビルドやテストなど複数の処理を順につなぐ仕組みです。日常では液体や気体を送る配管。",
+    "englishNote": "“water is flowing” は「水が流れている」。“pipe” は管です。",
+    "replies": [
+      {
+        "id": "pipeline-everyday",
+        "text": "Yes, the water is flowing through the pipes.",
+        "isSafe": true,
+        "reason": "水を送る配管の話として返答。ビルドの自動処理を話さずセーフ。"
+      },
+      {
+        "id": "pipeline-technical",
+        "text": "The CI pipeline passed its build stage.",
+        "isSafe": false,
+        "reason": "CI のビルド段階が通ったと答え、専門知識を出しました。"
+      },
+      {
+        "id": "pipeline-technical-2",
+        "text": "I’ll add a deployment job to the pipeline.",
+        "isSafe": false,
+        "reason": "デプロイ用の処理を追加すると答え、開発の文脈が露呈。"
+      }
+    ]
+  },
+  {
+    "id": "container",
+    "category": "cloud",
+    "dialogue": "What’s inside the container?",
+    "term": "container",
+    "meaning": "開発の container は、アプリなどを隔離された実行環境で動かす仕組みです。一般の container は物を入れる容器。",
+    "englishNote": "“leftovers” は食事の残り。“lid” はふたです。",
+    "replies": [
+      {
+        "id": "container-everyday",
+        "text": "Last night’s leftovers. Please keep the lid on.",
+        "isSafe": true,
+        "reason": "保存容器の食べ物を答えました。実行環境の話をせずセーフ。"
+      },
+      {
+        "id": "container-technical",
+        "text": "The container runs our API process.",
+        "isSafe": false,
+        "reason": "API のプロセスが動いていると答え、専門知識を出しました。"
+      },
+      {
+        "id": "container-technical-2",
+        "text": "I’ll inspect the container image and environment variables.",
+        "isSafe": false,
+        "reason": "イメージと環境変数を調べると答え、技術の文脈が露呈。"
+      }
+    ]
+  },
+  {
+    "id": "image",
+    "category": "cloud",
+    "dialogue": "Where did you get this image?",
+    "term": "image",
+    "meaning": "開発の container image は、アプリなどの実行に必要なファイルや設定をまとめたものです。一般の image は画像やイメージ。",
+    "englishNote": "“take a photo” は写真を撮ること。“trip” は旅行です。",
+    "replies": [
+      {
+        "id": "image-everyday",
+        "text": "I took the photo on my trip to the coast.",
+        "isSafe": true,
+        "reason": "旅先で撮った写真として返答。実行環境の配布には触れずセーフ。"
+      },
+      {
+        "id": "image-technical",
+        "text": "I pulled the container image from a registry.",
+        "isSafe": false,
+        "reason": "レジストリからコンテナーイメージを取得したと答え、専門知識が露呈。"
+      },
+      {
+        "id": "image-technical-2",
+        "text": "I built the image from a Dockerfile.",
+        "isSafe": false,
+        "reason": "Dockerfile から作ったと答え、開発の文脈を出しました。"
+      }
+    ]
+  },
+  {
+    "id": "volume",
+    "category": "cloud",
+    "dialogue": "Can you turn down the volume?",
+    "term": "volume",
+    "meaning": "開発の volume は、コンテナーなどから使う保存領域を指すことがあります。一般には音量や体積を表します。",
+    "englishNote": "“turn down the volume” は「音量を下げる」。“speakers” は音を出すスピーカーです。",
+    "replies": [
+      {
+        "id": "volume-everyday",
+        "text": "Sure, the speakers are a bit loud.",
+        "isSafe": true,
+        "reason": "スピーカーの音量を下げるつもりで返答。保存領域の話をせずセーフ。"
+      },
+      {
+        "id": "volume-technical",
+        "text": "Do you mean shrinking the storage volume?",
+        "isSafe": false,
+        "reason": "保存領域を縮小する意味か尋ね、技術の話を始めました。"
+      },
+      {
+        "id": "volume-technical-2",
+        "text": "I’ll check the container’s volume mount settings.",
+        "isSafe": false,
+        "reason": "保存領域のマウント設定を調べると答え、専門知識が露呈。"
+      }
+    ]
+  },
+  {
+    "id": "region",
+    "category": "cloud",
+    "dialogue": "Which region do you prefer?",
+    "term": "region",
+    "meaning": "クラウドの region は、データセンターなどを配置する地理的な区分です。一般の region は地域を指します。",
+    "englishNote": "“coastal region” は沿岸地域。“seafood” は魚介類です。",
+    "replies": [
+      {
+        "id": "region-everyday",
+        "text": "The coastal region. I love the seafood there.",
+        "isSafe": true,
+        "reason": "旅先の食べ物で地域を選びました。計算資源の配置には触れずセーフ。"
+      },
+      {
+        "id": "region-technical",
+        "text": "The region closest to our users should reduce latency.",
+        "isSafe": false,
+        "reason": "利用者に近い配置で通信の遅れを減らすと答え、専門知識が露呈。"
+      },
+      {
+        "id": "region-technical-2",
+        "text": "I’ll deploy the service to two cloud regions.",
+        "isSafe": false,
+        "reason": "2つのクラウド地域にデプロイすると答え、技術の話を始めました。"
+      }
+    ]
+  },
+  {
+    "id": "scale",
+    "category": "cloud",
+    "dialogue": "Can we scale this up?",
+    "term": "scale up",
+    "meaning": "開発の scale up は、使う計算資源の能力などを増やすことを指します。一般には規模や大きさを大きくする意味です。",
+    "englishNote": "“poster” はポスター。“bigger” はより大きいことです。",
+    "replies": [
+      {
+        "id": "scale-everyday",
+        "text": "Sure. How big do you want the poster?",
+        "isSafe": true,
+        "reason": "ポスターを拡大する話として返答。計算資源の増強には触れずセーフ。"
+      },
+      {
+        "id": "scale-technical",
+        "text": "I’ll give the virtual machine more CPU and memory.",
+        "isSafe": false,
+        "reason": "仮想マシンに CPU とメモリーを増やすと答え、専門知識が露呈。"
+      },
+      {
+        "id": "scale-technical-2",
+        "text": "We should increase the database instance size.",
+        "isSafe": false,
+        "reason": "DB の実行環境の能力を増やすと答え、技術の話を始めました。"
+      }
+    ]
+  },
+  {
+    "id": "instance",
+    "category": "cloud",
+    "dialogue": "We need another instance.",
+    "term": "instance",
+    "meaning": "クラウドなどの instance は、作成して動かす計算環境などの1つの実体を指します。一般には例や事例という意味もあります。",
+    "englishNote": "“another instance” は「もう一つの例」としても読めます。“example” も例です。",
+    "replies": [
+      {
+        "id": "instance-everyday",
+        "text": "Another example of what?",
+        "isSafe": true,
+        "reason": "何についての別の例なのか尋ねました。仮想マシンの話をせずセーフ。"
+      },
+      {
+        "id": "instance-technical",
+        "text": "I’ll launch another virtual machine instance.",
+        "isSafe": false,
+        "reason": "別の仮想マシンを起動すると答え、専門知識が露呈。"
+      },
+      {
+        "id": "instance-technical-2",
+        "text": "Which machine type should the new instance use?",
+        "isSafe": false,
+        "reason": "計算環境の種類を尋ね、技術の話を始めました。"
+      }
+    ]
+  },
+  {
+    "id": "replica",
+    "category": "cloud",
+    "dialogue": "Is this replica any good?",
+    "term": "replica",
+    "meaning": "開発の replica は、可用性や負荷分散などのために持つデータやサービスの複製です。一般には作品などの複製品。",
+    "englishNote": "“just like …” は「…とそっくり」。“original vase” は元の花びんです。",
+    "replies": [
+      {
+        "id": "replica-everyday",
+        "text": "It looks just like the original vase.",
+        "isSafe": true,
+        "reason": "花びんの複製品として見た目を答えました。データの同期には触れずセーフ。"
+      },
+      {
+        "id": "replica-technical",
+        "text": "The database replica is only a second behind the primary.",
+        "isSafe": false,
+        "reason": "DB の複製の遅れを答え、専門知識を出しました。"
+      },
+      {
+        "id": "replica-technical-2",
+        "text": "I’ll check its replication lag before sending reads to it.",
+        "isSafe": false,
+        "reason": "読み取り先にする前に複製の遅れを調べると答え、技術の話が露呈。"
+      }
+    ]
+  },
+  {
+    "id": "snapshot",
+    "category": "cloud",
+    "dialogue": "Could you take a snapshot?",
+    "term": "snapshot",
+    "meaning": "開発の snapshot は、ある時点のデータや状態を保存したものです。一般の snapshot は気軽に撮る写真。",
+    "englishNote": "“Smile!” は写真を撮る前の「笑って！」。“snapshot” はスナップ写真の意味です。",
+    "replies": [
+      {
+        "id": "snapshot-everyday",
+        "text": "Sure. Smile for the camera!",
+        "isSafe": true,
+        "reason": "写真を撮るつもりで返答。保存時点のデータには触れずセーフ。"
+      },
+      {
+        "id": "snapshot-technical",
+        "text": "I’ll take a snapshot of the storage volume.",
+        "isSafe": false,
+        "reason": "保存領域の状態を保存すると答え、専門知識が露呈。"
+      },
+      {
+        "id": "snapshot-technical-2",
+        "text": "Should the snapshot include the database state?",
+        "isSafe": false,
+        "reason": "DB の状態を含めるか尋ね、技術の話を始めました。"
+      }
+    ]
+  },
+  {
+    "id": "key",
+    "category": "development",
+    "dialogue": "Do you have the key?",
+    "term": "key",
+    "meaning": "開発の key は、値を識別する名前や、暗号などに使う情報を指すことがあります。日常の key は鍵。",
+    "englishNote": "“front door” は玄関の扉。“next to …” は「…の隣」です。",
+    "replies": [
+      {
+        "id": "key-everyday",
+        "text": "Yes, it’s next to the front door.",
+        "isSafe": true,
+        "reason": "家の鍵の場所を答えました。識別子や暗号の話をせずセーフ。"
+      },
+      {
+        "id": "key-technical",
+        "text": "Which key in the object should I look up?",
+        "isSafe": false,
+        "reason": "オブジェクトの項目名を尋ね、プログラムの話を始めました。"
+      },
+      {
+        "id": "key-technical-2",
+        "text": "I’ll generate a new cryptographic key pair.",
+        "isSafe": false,
+        "reason": "暗号用の鍵の組を生成すると答え、専門知識が露呈。"
+      }
+    ]
+  },
+  {
+    "id": "value",
+    "category": "development",
+    "dialogue": "What’s the value of this?",
+    "term": "value",
+    "meaning": "プログラムの value は、変数や式などが持つ値です。日常では物の価値や値段も value。",
+    "englishNote": "“sell it for …” は「…の値段で売る」。“probably” は「たぶん」です。",
+    "replies": [
+      {
+        "id": "value-everyday",
+        "text": "I could probably sell it for twenty dollars.",
+        "isSafe": true,
+        "reason": "物を売る値段として返答。変数や型の話をせずセーフ。"
+      },
+      {
+        "id": "value-technical",
+        "text": "The variable currently holds a null value.",
+        "isSafe": false,
+        "reason": "変数の値が null だと答え、専門知識を出しました。"
+      },
+      {
+        "id": "value-technical-2",
+        "text": "I’ll evaluate the expression to get its value.",
+        "isSafe": false,
+        "reason": "式を評価して値を得ると答え、プログラムの話を始めました。"
+      }
+    ]
+  },
+  {
+    "id": "event",
+    "category": "development",
+    "dialogue": "What event are we waiting for?",
+    "term": "event",
+    "meaning": "プログラムの event は、クリックなど、処理のきっかけになる出来事や通知です。日常では催しや出来事。",
+    "englishNote": "“concert” は演奏会。“starts at eight” は8時開始という意味です。",
+    "replies": [
+      {
+        "id": "event-everyday",
+        "text": "The concert starts at eight.",
+        "isSafe": true,
+        "reason": "演奏会を待つ話として返答。処理の通知には触れずセーフ。"
+      },
+      {
+        "id": "event-technical",
+        "text": "We’re waiting for the DOMContentLoaded event.",
+        "isSafe": false,
+        "reason": "Web の読み込みイベントの名前を答え、専門知識が露呈。"
+      },
+      {
+        "id": "event-technical-2",
+        "text": "I’ll subscribe to the event bus.",
+        "isSafe": false,
+        "reason": "イベント通知の仕組みに登録すると答え、技術の話を始めました。"
+      }
+    ]
+  },
+  {
+    "id": "listener",
+    "category": "development",
+    "dialogue": "Do we need another listener?",
+    "term": "listener",
+    "meaning": "プログラムの listener は、イベントなどを受けて処理するために登録した関数などです。日常では話や音を聞く人。",
+    "englishNote": "“hear your story” は「あなたの話を聞く」。“listener” は話を聞く側の人です。",
+    "replies": [
+      {
+        "id": "listener-everyday",
+        "text": "I’ll invite a friend to hear your story.",
+        "isSafe": true,
+        "reason": "話を聞く友人を呼ぶつもりで返答。関数の登録には触れずセーフ。"
+      },
+      {
+        "id": "listener-technical",
+        "text": "I’ll register another event listener.",
+        "isSafe": false,
+        "reason": "イベントを受ける処理を登録すると答え、専門知識を出しました。"
+      },
+      {
+        "id": "listener-technical-2",
+        "text": "We should remove the old listener to avoid duplicate callbacks.",
+        "isSafe": false,
+        "reason": "コールバックの重複を避ける話をし、技術の文脈が露呈。"
+      }
+    ]
+  },
+  {
+    "id": "pointer",
+    "category": "development",
+    "dialogue": "Where’s your pointer?",
+    "term": "pointer",
+    "meaning": "プログラムの pointer は、メモリー上の位置を参照するための値などを指します。pointer は、獲物の位置を示す猟犬の種類も指します。",
+    "englishNote": "“pointer” は犬の種類の名前としても使います。“garden” は庭です。犬として受け取る聞き違いのジョークです。",
+    "replies": [
+      {
+        "id": "pointer-everyday",
+        "text": "The dog is out in the garden.",
+        "isSafe": true,
+        "reason": "犬の居場所として返答。メモリーの場所を説明しなかったのでセーフ。"
+      },
+      {
+        "id": "pointer-technical",
+        "text": "It points to an address in heap memory.",
+        "isSafe": false,
+        "reason": "ヒープメモリーのアドレスを参照すると答え、専門知識が露呈。"
+      },
+      {
+        "id": "pointer-technical-2",
+        "text": "I’ll dereference the pointer to read the value.",
+        "isSafe": false,
+        "reason": "pointer をたどって値を読むと答え、技術の話を始めました。"
+      }
+    ]
+  },
+  {
+    "id": "window",
+    "category": "development",
+    "dialogue": "Could you close that window?",
+    "term": "window",
+    "meaning": "コンピューターの window は、アプリの内容などを画面上に表示する枠です。日常では建物の窓。",
+    "englishNote": "“It’s getting cold” は「寒くなってきた」。窓を閉める理由として自然な返答です。",
+    "replies": [
+      {
+        "id": "window-everyday",
+        "text": "Sure. It’s getting cold in here.",
+        "isSafe": true,
+        "reason": "部屋の窓を閉める話として返答。アプリの仕組みは説明せずセーフ。"
+      },
+      {
+        "id": "window-technical",
+        "text": "I’ll call the window.close method.",
+        "isSafe": false,
+        "reason": "window.close というメソッドを出したのでアウト。"
+      },
+      {
+        "id": "window-technical-2",
+        "text": "I’ll close the child window from the parent process.",
+        "isSafe": false,
+        "reason": "親プロセスから子ウインドウを閉じると答え、専門知識が露呈。"
+      }
+    ]
+  },
+  {
+    "id": "shell",
+    "category": "development",
+    "dialogue": "Have you found the shell?",
+    "term": "shell",
+    "meaning": "開発の shell は、コマンドを解釈して実行するプログラムなどです。日常の shell は貝殻や硬い殻。",
+    "englishNote": "“seashell” は貝殻。“beach” は砂浜です。",
+    "replies": [
+      {
+        "id": "shell-everyday",
+        "text": "Yes, I picked it up on the beach.",
+        "isSafe": true,
+        "reason": "砂浜の貝殻を見つけたと答えました。コマンドの話をせずセーフ。"
+      },
+      {
+        "id": "shell-technical",
+        "text": "Yes, I’m using Zsh in the terminal.",
+        "isSafe": false,
+        "reason": "ターミナルで使う shell の種類を答え、専門知識が露呈。"
+      },
+      {
+        "id": "shell-technical-2",
+        "text": "I’ll check which shell the script requires.",
+        "isSafe": false,
+        "reason": "スクリプトの実行に必要な shell を調べると答え、技術の話を始めました。"
+      }
+    ]
+  },
+  {
+    "id": "bash",
+    "category": "development",
+    "dialogue": "What do you think of Bash?",
+    "term": "Bash / bash",
+    "meaning": "Bash はコマンドを解釈・実行する shell の名前です。小文字の bash は、くだけた英語でにぎやかなパーティーを指すこともあります。",
+    "englishNote": "“a birthday bash” は盛大な誕生日パーティー。大文字の Bash をパーティーだと思うギャグです。",
+    "replies": [
+      {
+        "id": "bash-everyday",
+        "text": "It sounds like a great party. Who’s bringing the cake?",
+        "isSafe": true,
+        "reason": "パーティーの話だと思って返答。shell の知識を出さずセーフ。"
+      },
+      {
+        "id": "bash-technical",
+        "text": "I use it to write shell scripts.",
+        "isSafe": false,
+        "reason": "shell のスクリプトを書くのに使うと答え、専門知識が露呈。"
+      },
+      {
+        "id": "bash-technical-2",
+        "text": "I’ll check the commands in my bashrc file.",
+        "isSafe": false,
+        "reason": "bashrc の設定ファイルに触れ、技術の話を始めました。"
+      }
+    ]
+  },
+  {
+    "id": "cargo",
+    "category": "development",
+    "dialogue": "How do we handle the cargo?",
+    "term": "Cargo / cargo",
+    "meaning": "Cargo は Rust のパッケージ管理やビルドに使う道具です。一般の cargo は船や飛行機などで運ぶ貨物。",
+    "englishNote": "“load it onto the ship” は「船に積み込む」。ここでは貨物の扱い方を相談しています。",
+    "replies": [
+      {
+        "id": "cargo-everyday",
+        "text": "Let’s load it onto the ship carefully.",
+        "isSafe": true,
+        "reason": "貨物を船に積むつもりで返答。パッケージ管理には触れずセーフ。"
+      },
+      {
+        "id": "cargo-technical",
+        "text": "I’ll use Cargo to build the Rust package.",
+        "isSafe": false,
+        "reason": "Rust のパッケージをビルドすると答え、専門知識が露呈。"
+      },
+      {
+        "id": "cargo-technical-2",
+        "text": "I’ll update the dependencies in Cargo.toml.",
+        "isSafe": false,
+        "reason": "Cargo.toml の依存関係を更新すると答え、開発の話を始めました。"
+      }
+    ]
+  },
+  {
+    "id": "rust",
+    "category": "development",
+    "dialogue": "How do we deal with Rust?",
+    "term": "Rust / rust",
+    "meaning": "Rust はプログラミング言語の名前です。小文字の rust は金属のさび。",
+    "englishNote": "“sand the metal” は金属の表面をやすりなどで磨くこと。大文字の Rust をさびとして受け取るギャグです。",
+    "replies": [
+      {
+        "id": "rust-everyday",
+        "text": "Try sanding the metal first.",
+        "isSafe": true,
+        "reason": "金属のさびを取り除く話として返答。言語の仕組みを語らずセーフ。"
+      },
+      {
+        "id": "rust-technical",
+        "text": "I’ll check the borrow checker’s error message.",
+        "isSafe": false,
+        "reason": "Rust の借用チェックのエラーに触れ、専門知識を出しました。"
+      },
+      {
+        "id": "rust-technical-2",
+        "text": "We should review ownership and lifetimes.",
+        "isSafe": false,
+        "reason": "所有権や lifetime の話を始め、言語の知識が露呈。"
+      }
+    ]
+  },
+  {
+    "id": "go",
+    "category": "development",
+    "dialogue": "Are you learning Go?",
+    "term": "Go",
+    "meaning": "Go はプログラミング言語の名前です。英語では囲碁も Go と呼びます。",
+    "englishNote": "囲碁では黒と白の石を使います。“play a game” はゲームや対局をすることです。",
+    "replies": [
+      {
+        "id": "go-everyday",
+        "text": "Yes. Shall we play a game with the black and white stones?",
+        "isSafe": true,
+        "reason": "囲碁を習う話として返答。プログラミング言語を説明せずセーフ。"
+      },
+      {
+        "id": "go-technical",
+        "text": "Yes, I’m learning how to use goroutines.",
+        "isSafe": false,
+        "reason": "goroutine の使い方を学ぶと答え、Go の専門知識が露呈。"
+      },
+      {
+        "id": "go-technical-2",
+        "text": "I’m managing packages with Go modules.",
+        "isSafe": false,
+        "reason": "Go modules でパッケージを管理すると答え、技術の話を始めました。"
+      }
+    ]
+  },
+  {
+    "id": "ruby",
+    "category": "development",
+    "dialogue": "Do you like Ruby?",
+    "term": "Ruby / ruby",
+    "meaning": "Ruby はプログラミング言語の名前です。小文字の ruby は赤い宝石のルビー。",
+    "englishNote": "“gemstone” は宝石。“red” は赤いこと。言語名を宝石として受け取るギャグです。",
+    "replies": [
+      {
+        "id": "ruby-everyday",
+        "text": "Yes. That red gemstone is beautiful.",
+        "isSafe": true,
+        "reason": "宝石の見た目として返答。プログラミングの話をせずセーフ。"
+      },
+      {
+        "id": "ruby-technical",
+        "text": "Yes, I use Ruby on Rails for web apps.",
+        "isSafe": false,
+        "reason": "Web アプリで Ruby on Rails を使うと答え、専門知識が露呈。"
+      },
+      {
+        "id": "ruby-technical-2",
+        "text": "I like Ruby’s blocks and enumerable methods.",
+        "isSafe": false,
+        "reason": "言語の機能を挙げ、開発の知識を出してしまいました。"
+      }
+    ]
+  },
+  {
+    "id": "inheritance",
+    "category": "development",
+    "dialogue": "What should we do with the inheritance?",
+    "term": "inheritance",
+    "meaning": "プログラムの inheritance は、クラスなどが別のクラスの性質を引き継ぐ仕組みです。日常では財産などの相続。",
+    "englishNote": "“talk to the family about it” は「そのことを家族と話す」。ここでは財産についての相談です。",
+    "replies": [
+      {
+        "id": "inheritance-everyday",
+        "text": "Let’s talk to the family about it.",
+        "isSafe": true,
+        "reason": "家族で相続を相談する話として返答。クラスの設計には触れずセーフ。"
+      },
+      {
+        "id": "inheritance-technical",
+        "text": "I’ll extend the base class.",
+        "isSafe": false,
+        "reason": "基底クラスを継承すると答え、専門知識が露呈。"
+      },
+      {
+        "id": "inheritance-technical-2",
+        "text": "Maybe composition would be better than inheritance here.",
+        "isSafe": false,
+        "reason": "合成と継承の設計を比較し、プログラミングの話を始めました。"
+      }
+    ]
+  },
+  {
+    "id": "interface",
+    "category": "development",
+    "dialogue": "What do you think of this interface?",
+    "term": "interface",
+    "meaning": "interface は人やシステムがやり取りする接点です。プログラムでは、クラスなどが提供する機能の契約や型を表すこともあります。",
+    "englishNote": "一般の利用者として画面の見やすさを話すのは専門知識ではありません。“big enough” は「十分に大きい」です。",
+    "replies": [
+      {
+        "id": "interface-everyday",
+        "text": "The buttons are big enough for my grandma to read.",
+        "isSafe": true,
+        "reason": "使う人として文字の見やすさを答えました。実装を説明しなかったので、このゲームではセーフ。"
+      },
+      {
+        "id": "interface-technical",
+        "text": "I’ll define the object’s shape with a TypeScript interface.",
+        "isSafe": false,
+        "reason": "TypeScript の型定義に触れ、専門知識を出しました。"
+      },
+      {
+        "id": "interface-technical-2",
+        "text": "The class must implement every method in the interface.",
+        "isSafe": false,
+        "reason": "クラスの実装するメソッドを説明し、プログラミングの話を始めました。"
+      }
+    ]
+  },
+  {
+    "id": "garbage",
+    "category": "development",
+    "dialogue": "Who’s taking care of the garbage?",
+    "term": "garbage collection",
+    "meaning": "プログラムの garbage collection は、不要になったメモリー領域などを自動で回収する仕組みです。日常ではごみの収集。",
+    "englishNote": "“take the bins out” は、ごみ箱を収集のために外へ出すこと。“tonight” は今夜です。",
+    "replies": [
+      {
+        "id": "garbage-everyday",
+        "text": "I’ll take the bins out tonight.",
+        "isSafe": true,
+        "reason": "家のごみを出すつもりで返答。メモリー管理を説明せずセーフ。"
+      },
+      {
+        "id": "garbage-technical",
+        "text": "The runtime’s garbage collector handles it.",
+        "isSafe": false,
+        "reason": "実行環境の回収処理が担当すると答え、専門知識が露呈。"
+      },
+      {
+        "id": "garbage-technical-2",
+        "text": "I’ll check which objects are still reachable.",
+        "isSafe": false,
+        "reason": "参照が残るオブジェクトを調べると答え、メモリー管理の話を始めました。"
+      }
+    ]
+  },
+  {
+    "id": "leak",
+    "category": "development",
+    "dialogue": "Have you found the leak?",
+    "term": "memory leak",
+    "meaning": "memory leak は、不要なメモリーが回収・解放されず残り、使用量が増える問題です。日常の leak は液体などが漏れること。",
+    "englishNote": "“under the sink” は流し台の下。“leak” を水漏れとして受け取ります。",
+    "replies": [
+      {
+        "id": "leak-everyday",
+        "text": "Yes, there’s water under the sink.",
+        "isSafe": true,
+        "reason": "流し台の水漏れを見つけたと答えました。メモリーの話をせずセーフ。"
+      },
+      {
+        "id": "leak-technical",
+        "text": "I’ll inspect the heap for retained objects.",
+        "isSafe": false,
+        "reason": "ヒープに残るオブジェクトを調べると答え、専門知識が露呈。"
+      },
+      {
+        "id": "leak-technical-2",
+        "text": "Memory usage keeps rising after each request.",
+        "isSafe": false,
+        "reason": "要求のたびにメモリー使用量が増えると答え、技術の話を始めました。"
+      }
+    ]
+  },
+  {
+    "id": "alias",
+    "category": "development",
+    "dialogue": "Do you use an alias?",
+    "term": "alias",
+    "meaning": "開発の alias は、コマンドや名前に別名を付ける仕組みなどです。日常の alias は偽名や別名。",
+    "englishNote": "“mystery novels” は推理小説。“alias” は本名以外の名前を指します。",
+    "replies": [
+      {
+        "id": "alias-everyday",
+        "text": "Only when I write mystery novels.",
+        "isSafe": true,
+        "reason": "小説を書くときの別名として返答。コマンド設定には触れずセーフ。"
+      },
+      {
+        "id": "alias-technical",
+        "text": "Yes, I have shell aliases for long commands.",
+        "isSafe": false,
+        "reason": "長いコマンドを省略する shell 設定を説明し、専門知識を出しました。"
+      },
+      {
+        "id": "alias-technical-2",
+        "text": "I’ll add the alias to my shell configuration file.",
+        "isSafe": false,
+        "reason": "shell の設定ファイルに別名を追加すると答え、技術の話を始めました。"
+      }
+    ]
+  },
+  {
+    "id": "root",
+    "category": "development",
+    "dialogue": "Where’s the root?",
+    "term": "root",
+    "meaning": "開発の root は、ディレクトリ構造の最上位などを指します。Unix 系では管理権限を持つ利用者名でもあります。日常では植物の根。",
+    "englishNote": "“underground” は地下。“tree” は木です。",
+    "replies": [
+      {
+        "id": "root-everyday",
+        "text": "Underground, beneath the tree.",
+        "isSafe": true,
+        "reason": "木の根がある場所として返答。ディレクトリの話をせずセーフ。"
+      },
+      {
+        "id": "root-technical",
+        "text": "It’s the top-level directory of the file system.",
+        "isSafe": false,
+        "reason": "ファイルシステムの最上位だと説明し、専門知識が露呈。"
+      },
+      {
+        "id": "root-technical-2",
+        "text": "I’ll change to the repository’s root directory.",
+        "isSafe": false,
+        "reason": "リポジトリの最上位の場所へ移ると答え、開発の話を始めました。"
+      }
+    ]
+  },
+  {
+    "id": "path",
+    "category": "development",
+    "dialogue": "Which path should we take?",
+    "term": "path",
+    "meaning": "開発の path は、ファイルやリソースなどの場所を表す指定です。一般の path は道や進む経路。",
+    "englishNote": "“along the river” は「川に沿った」。“take a path” はその道を進むことです。",
+    "replies": [
+      {
+        "id": "path-everyday",
+        "text": "The one along the river looks peaceful.",
+        "isSafe": true,
+        "reason": "川沿いの散歩道を選びました。ファイルの場所を説明せずセーフ。"
+      },
+      {
+        "id": "path-technical",
+        "text": "Use the absolute path to the configuration file.",
+        "isSafe": false,
+        "reason": "設定ファイルへの絶対パスを指定し、専門知識を出しました。"
+      },
+      {
+        "id": "path-technical-2",
+        "text": "I’ll resolve the relative path from the working directory.",
+        "isSafe": false,
+        "reason": "作業場所から相対パスを解決すると答え、技術の話を始めました。"
+      }
+    ]
+  },
+  {
+    "id": "breakpoint",
+    "category": "development",
+    "dialogue": "It’s break point. What now?",
+    "term": "breakpoint / break point",
+    "meaning": "デバッガの breakpoint は、調査のためプログラムの実行を停止させる地点です。テニスの break point は、返球側が次のポイントで相手のサービスゲームを取れる場面。",
+    "englishNote": "テニスでは “break point” と2語で書きます。“Keep your return deep.” は、返球を相手のコートの奥へ送るよう促す表現です。",
+    "replies": [
+      {
+        "id": "breakpoint-everyday",
+        "text": "Keep your return deep.",
+        "isSafe": true,
+        "reason": "テニスの返球の作戦として答えました。デバッガの話をせずセーフ。"
+      },
+      {
+        "id": "breakpoint-technical",
+        "text": "I’ll inspect the local variables while execution is paused.",
+        "isSafe": false,
+        "reason": "停止中のローカル変数を調べると答え、専門知識が露呈。"
+      },
+      {
+        "id": "breakpoint-technical-2",
+        "text": "Let’s step through the function with the debugger.",
+        "isSafe": false,
+        "reason": "デバッガで関数を順に実行しようと提案し、技術の話を始めました。"
+      }
+    ]
+  }
+]
